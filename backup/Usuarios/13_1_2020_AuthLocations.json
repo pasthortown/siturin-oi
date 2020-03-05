@@ -1,0 +1,762 @@
+[
+    {
+        "AuthLocation": {
+            "id": 1,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 224,
+            "id_user": 1
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 2,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 224,
+            "id_user": 2
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 3,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 81,
+            "id_user": 3
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 4,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 81,
+            "id_user": 4
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 5,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 1,
+            "id_user": 5
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 6,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 1,
+            "id_user": 6
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 7,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 1,
+            "id_user": 7
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 8,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 122,
+            "id_user": 8
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 9,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 122,
+            "id_user": 9
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 10,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 122,
+            "id_user": 10
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 11,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 183,
+            "id_user": 11
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 12,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 183,
+            "id_user": 12
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 13,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 333,
+            "id_user": 13
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 14,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 333,
+            "id_user": 14
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 15,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 224,
+            "id_user": 15
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 16,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 364,
+            "id_user": 16
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 17,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 401,
+            "id_user": 17
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 18,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 401,
+            "id_user": 18
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 19,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 459,
+            "id_user": 19
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 20,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 459,
+            "id_user": 20
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 21,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 459,
+            "id_user": 21
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 22,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 533,
+            "id_user": 22
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 23,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 559,
+            "id_user": 23
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 24,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 588,
+            "id_user": 24
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 25,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 588,
+            "id_user": 25
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 26,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 636,
+            "id_user": 26
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 27,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 636,
+            "id_user": 27
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 28,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 636,
+            "id_user": 28
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 29,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 636,
+            "id_user": 29
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 30,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 636,
+            "id_user": 30
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 31,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 634,
+            "id_user": 31
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 32,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 634,
+            "id_user": 32
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 33,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 877,
+            "id_user": 33
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 34,
+            "created_at": "2020-01-13 08:34:47",
+            "updated_at": "2020-01-13 08:34:47",
+            "id_ubication": 787,
+            "id_user": 34
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 35,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 787,
+            "id_user": 35
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 36,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 787,
+            "id_user": 36
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 37,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 787,
+            "id_user": 37
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 38,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 787,
+            "id_user": 38
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 39,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 789,
+            "id_user": 39
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 40,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 868,
+            "id_user": 40
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 41,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 868,
+            "id_user": 41
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 42,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1036,
+            "id_user": 42
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 43,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1036,
+            "id_user": 43
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 44,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1036,
+            "id_user": 44
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 45,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1036,
+            "id_user": 45
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 46,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1149,
+            "id_user": 46
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 47,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1191,
+            "id_user": 47
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 48,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1191,
+            "id_user": 48
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 49,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1265,
+            "id_user": 49
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 50,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1265,
+            "id_user": 50
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 51,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1263,
+            "id_user": 51
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 52,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1263,
+            "id_user": 52
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 53,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1494,
+            "id_user": 53
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 54,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1494,
+            "id_user": 54
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 55,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1543,
+            "id_user": 55
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 56,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1543,
+            "id_user": 56
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 57,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1545,
+            "id_user": 57
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 58,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1549,
+            "id_user": 58
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 59,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1545,
+            "id_user": 59
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 60,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 634,
+            "id_user": 60
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 61,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1263,
+            "id_user": 61
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 62,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 787,
+            "id_user": 62
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 63,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 401,
+            "id_user": 63
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 64,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 224,
+            "id_user": 64
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 65,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1036,
+            "id_user": 65
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 66,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1543,
+            "id_user": 66
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 67,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 224,
+            "id_user": 67
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 68,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 634,
+            "id_user": 68
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 69,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 401,
+            "id_user": 69
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 70,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1543,
+            "id_user": 70
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 71,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1,
+            "id_user": 67
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 72,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 787,
+            "id_user": 68
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 73,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1036,
+            "id_user": 69
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 74,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1263,
+            "id_user": 69
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 75,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 183,
+            "id_user": 71
+        },
+        "attach": []
+    },
+    {
+        "AuthLocation": {
+            "id": 76,
+            "created_at": "2020-01-13 08:34:48",
+            "updated_at": "2020-01-13 08:34:48",
+            "id_ubication": 1,
+            "id_user": 71
+        },
+        "attach": []
+    }
+]

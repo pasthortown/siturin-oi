@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<database name="BASE" schema="public" type="PostgreSQL - 12.0 (Debian 12.0-2.pgdg100+1)">
+   <tables>
+      <table name="agreements" numRows="1" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('agreements_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial"/>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="title" nullable="true" remarks="" size="1024" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="4" name="content" nullable="true" remarks="" size="2147483647" type="text"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="agreements_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="establishment_certification_attachments" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('establishment_certification_attachments_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial">
+            <child column="establishment_certification_attachment_id" foreignKey="establishment_certifications_establishment_certification_attach" implied="false" onDeleteCascade="true" schema="public" table="establishment_certifications"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="establishment_certification_attachment_file_type" nullable="true" remarks="" size="50" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="4" name="establishment_certification_attachment_file_name" nullable="true" remarks="" size="50" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="5" name="establishment_certification_attachment_file" nullable="true" remarks="" size="2147483647" type="text"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="establishment_certification_attachments_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="establishment_certification_types" numRows="18" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('establishment_certification_types_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial">
+            <child column="establishment_certification_type_id" foreignKey="establishment_certifications_establishment_certification_type_i" implied="false" onDeleteCascade="true" schema="public" table="establishment_certifications"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="name" nullable="true" remarks="" size="100" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="4" name="code" nullable="true" remarks="" size="20" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="5" name="father_code" nullable="true" remarks="" size="20" type="varchar"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="establishment_certification_types_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="establishment_certifications" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('establishment_certifications_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial">
+            <child column="establishment_certification_id" foreignKey="establishment_establishment_certification_establishment_certifi" implied="false" onDeleteCascade="true" schema="public" table="establishment_establishment_certification"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="establishment_certification_type_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="establishment_certifications_establishment_certification_type_i" implied="false" onDeleteCascade="true" schema="public" table="establishment_certification_types"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="4" name="establishment_certification_attachment_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="establishment_certifications_establishment_certification_attach" implied="false" onDeleteCascade="true" schema="public" table="establishment_certification_attachments"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="establishment_certifications_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="establishment_establishment_certification" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('establishment_establishment_certification_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial"/>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="establishment_certification_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="establishment_establishment_certification_establishment_certifi" implied="false" onDeleteCascade="true" schema="public" table="establishment_certifications"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="4" name="establishment_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="establishment_establishment_certification_establishment_id_fore" implied="false" onDeleteCascade="true" schema="public" table="establishments"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="establishment_establishment_certification_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="establishment_language" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('establishment_language_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial"/>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="language_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="establishment_language_language_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="languages"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="4" name="establishment_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="establishment_language_establishment_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="establishments"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="establishment_language_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="establishment_pictures" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('establishment_pictures_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial"/>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="establishment_picture_file_type" nullable="true" remarks="" size="50" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="4" name="establishment_picture_file_name" nullable="true" remarks="" size="50" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="5" name="establishment_picture_file" nullable="true" remarks="" size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="0" id="6" name="establishment_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="establishment_pictures_establishment_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="establishments"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="establishment_pictures_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="establishment_preview_register_code" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('establishment_preview_register_code_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial"/>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="preview_register_code_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="establishment_preview_register_code_preview_register_code_id_fo" implied="false" onDeleteCascade="true" schema="public" table="preview_register_codes"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="4" name="establishment_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="establishment_preview_register_code_establishment_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="establishments"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="establishment_preview_register_code_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="establishment_property_types" numRows="3" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('establishment_property_types_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial">
+            <child column="establishment_property_type_id" foreignKey="establishments_establishment_property_type_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="establishments"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="name" nullable="true" remarks="" size="100" type="varchar"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="establishment_property_types_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="establishment_states" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('establishment_states_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial"/>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="justification" nullable="true" remarks="" size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="0" id="4" name="state_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="establishment_states_state_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="states"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="5" name="establishment_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="establishment_states_establishment_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="establishments"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="establishment_states_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="establishment_worker" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('establishment_worker_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial"/>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="worker_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="establishment_worker_worker_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="workers"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="4" name="establishment_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="establishment_worker_establishment_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="establishments"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="establishment_worker_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="establishments" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('establishments_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial">
+            <child column="establishment_id" foreignKey="establishment_establishment_certification_establishment_id_fore" implied="false" onDeleteCascade="true" schema="public" table="establishment_establishment_certification"/>
+            <child column="establishment_id" foreignKey="establishment_language_establishment_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="establishment_language"/>
+            <child column="establishment_id" foreignKey="establishment_pictures_establishment_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="establishment_pictures"/>
+            <child column="establishment_id" foreignKey="establishment_preview_register_code_establishment_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="establishment_preview_register_code"/>
+            <child column="establishment_id" foreignKey="establishment_states_establishment_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="establishment_states"/>
+            <child column="establishment_id" foreignKey="establishment_worker_establishment_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="establishment_worker"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="ruc_code_id" nullable="true" remarks="" size="3" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="4" name="commercially_known_name" nullable="true" remarks="" size="255" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="5" name="address_main_street" nullable="true" remarks="" size="255" type="varchar"/>
+         <column autoUpdated="false" digits="17" id="6" name="address_map_latitude" nullable="true" remarks="" size="17" type="float8"/>
+         <column autoUpdated="false" digits="17" id="7" name="address_map_longitude" nullable="true" remarks="" size="17" type="float8"/>
+         <column autoUpdated="false" digits="0" id="8" name="url_web" nullable="true" remarks="" size="255" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="9" name="as_turistic_register_date" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="10" name="address_reference" nullable="true" remarks="" size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="0" id="11" name="contact_user_id" nullable="true" remarks="" size="10" type="int4"/>
+         <column autoUpdated="false" digits="0" id="12" name="address_secondary_street" nullable="true" remarks="" size="255" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="13" name="address_number" nullable="true" remarks="" size="20" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="14" name="franchise_chain_name" nullable="true" remarks="" size="50" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="15" name="ruc_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="establishments_ruc_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="rucs"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="16" name="ubication_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="establishments_ubication_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="ubications"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="17" name="establishment_property_type_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="establishments_establishment_property_type_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="establishment_property_types"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="18" name="ruc_name_type_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="establishments_ruc_name_type_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="ruc_name_types"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="establishments_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="floor_authorization_certificates" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('floor_authorization_certificates_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial"/>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="floor_authorization_certificate_file_type" nullable="true" remarks="" size="50" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="4" name="floor_authorization_certificate_file_name" nullable="true" remarks="" size="50" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="5" name="floor_authorization_certificate_file" nullable="true" remarks="" size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="0" id="6" name="register_id" nullable="true" remarks="" size="10" type="int4"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="floor_authorization_certificates_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="genders" numRows="2" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('genders_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial">
+            <child column="gender_id" foreignKey="workers_gender_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="workers"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="name" nullable="true" remarks="" size="100" type="varchar"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="genders_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="group_givens" numRows="1" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('group_givens_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial"/>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="register_code" nullable="true" remarks="" size="50" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="4" name="ruc_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="group_givens_ruc_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="rucs"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="5" name="person_representative_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="group_givens_person_representative_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="person_representatives"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="6" name="group_type_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="group_givens_group_type_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="group_types"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="group_givens_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="group_types" numRows="6" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('group_types_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial">
+            <child column="group_type_id" foreignKey="group_givens_group_type_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="group_givens"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="name" nullable="true" remarks="" size="255" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="4" name="description" nullable="true" remarks="" size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="0" id="5" name="representative_rol_name" nullable="true" remarks="" size="255" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="6" name="representative_rol_description" nullable="true" remarks="" size="2147483647" type="text"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="group_types_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="languages" numRows="31" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('languages_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial">
+            <child column="language_id" foreignKey="establishment_language_language_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="establishment_language"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="name" nullable="true" remarks="" size="30" type="varchar"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="languages_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="logs" numRows="16" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('logs_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial"/>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="date_time" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="4" name="request" nullable="true" remarks="" size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="0" id="5" name="user_id" nullable="false" remarks="" size="10" type="int4"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="logs_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="migrations" numRows="29" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('migrations_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial"/>
+         <column autoUpdated="false" digits="0" id="1" name="migration" nullable="false" remarks="" size="255" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="2" name="batch" nullable="false" remarks="" size="10" type="int4"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="migrations_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="person_representative_attachments" numRows="1" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('person_representative_attachments_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial"/>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="person_representative_attachment_file_type" nullable="true" remarks="" size="50" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="4" name="person_representative_attachment_file_name" nullable="true" remarks="" size="50" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="5" name="person_representative_attachment_file" nullable="true" remarks="" size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="0" id="6" name="ruc" nullable="true" remarks="" size="13" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="7" name="assignment_date" nullable="true" remarks="" size="13" type="date"/>
+         <column autoUpdated="false" digits="0" id="8" name="person_representative_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="person_representative_attachments_person_representative_id_fore" implied="false" onDeleteCascade="true" schema="public" table="person_representatives"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="person_representative_attachments_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="person_representatives" numRows="1" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('person_representatives_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial">
+            <child column="person_representative_id" foreignKey="group_givens_person_representative_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="group_givens"/>
+            <child column="person_representative_id" foreignKey="person_representative_attachments_person_representative_id_fore" implied="false" onDeleteCascade="true" schema="public" table="person_representative_attachments"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="identification" nullable="true" remarks="" size="10" type="varchar"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="person_representatives_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="preview_register_codes" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('preview_register_codes_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial">
+            <child column="preview_register_code_id" foreignKey="establishment_preview_register_code_preview_register_code_id_fo" implied="false" onDeleteCascade="true" schema="public" table="establishment_preview_register_code"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="code" nullable="true" remarks="" size="20" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="4" name="system_name_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="preview_register_codes_system_name_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="system_names"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="preview_register_codes_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="ruc_name_types" numRows="3" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('ruc_name_types_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial">
+            <child column="ruc_name_type_id" foreignKey="establishments_ruc_name_type_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="establishments"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="name" nullable="true" remarks="" size="50" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="4" name="description" nullable="true" remarks="" size="2147483647" type="text"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="ruc_name_types_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="rucs" numRows="1" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('rucs_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial">
+            <child column="ruc_id" foreignKey="establishments_ruc_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="establishments"/>
+            <child column="ruc_id" foreignKey="group_givens_ruc_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="group_givens"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="number" nullable="true" remarks="" size="13" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="4" name="baised_accounting" nullable="true" remarks="" size="1" type="bool"/>
+         <column autoUpdated="false" digits="0" id="5" name="contact_user_id" nullable="true" remarks="" size="10" type="int4"/>
+         <column autoUpdated="false" digits="0" id="6" name="owner_name" nullable="true" remarks="" size="255" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="7" name="tax_payer_type_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="rucs_tax_payer_type_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="tax_payer_types"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="rucs_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="states" numRows="2" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('states_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial">
+            <child column="state_id" foreignKey="establishment_states_state_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="establishment_states"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="name" nullable="true" remarks="" size="50" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="4" name="description" nullable="true" remarks="" size="2147483647" type="text"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="states_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="system_names" numRows="2" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('system_names_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial">
+            <child column="system_name_id" foreignKey="preview_register_codes_system_name_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="preview_register_codes"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="name" nullable="true" remarks="" size="20" type="varchar"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="system_names_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="tax_payer_types" numRows="2" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('tax_payer_types_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial">
+            <child column="tax_payer_type_id" foreignKey="rucs_tax_payer_type_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="rucs"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="name" nullable="true" remarks="" size="20" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="4" name="description" nullable="true" remarks="" size="2147483647" type="text"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="tax_payer_types_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="ubications" numRows="1531" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('ubications_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial">
+            <child column="ubication_id" foreignKey="establishments_ubication_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="establishments"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="name" nullable="true" remarks="" size="255" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="4" name="code" nullable="true" remarks="" size="100" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="5" name="father_code" nullable="true" remarks="" size="100" type="varchar"/>
+         <column autoUpdated="false" digits="17" id="6" name="gmap_reference_latitude" nullable="true" remarks="" size="17" type="float8"/>
+         <column autoUpdated="false" digits="17" id="7" name="gmap_reference_longitude" nullable="true" remarks="" size="17" type="float8"/>
+         <column autoUpdated="false" digits="0" id="8" name="acronym" nullable="true" remarks="" size="20" type="varchar"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="ubications_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="worker_groups" numRows="8" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('worker_groups_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial">
+            <child column="worker_group_id" foreignKey="workers_worker_group_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="workers"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="name" nullable="true" remarks="" size="100" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="4" name="description" nullable="true" remarks="" size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="0" id="5" name="is_max" nullable="true" remarks="" size="1" type="bool"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="worker_groups_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="workers" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('workers_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial">
+            <child column="worker_id" foreignKey="establishment_worker_worker_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="establishment_worker"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="count" nullable="true" remarks="" size="10" type="int4"/>
+         <column autoUpdated="false" digits="0" id="4" name="gender_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="workers_gender_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="genders"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="5" name="worker_group_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="workers_worker_group_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="worker_groups"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="workers_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+   </tables>
+</database>

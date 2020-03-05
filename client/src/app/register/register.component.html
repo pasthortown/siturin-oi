@@ -1,0 +1,103 @@
+<div class="container" class="register-page">
+  <div class="row">
+    <div class="col-12" style="height: 20px;">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 col-lg-3 col-sm-1"></div>
+    <div class="col-md-6 col-lg-6 col-sm-10 pretty-form p-4">
+      <div class="row">
+        <div class="col-12 text-center">
+            <img src="assets/images/logo-sistema.png" class="col-sm-12 col-md-10 col-lg-7" />
+        </div>
+      </div>
+      <div class="row">
+          <h2 class="col-12 text-center mt-3">
+            Crear una Cuenta Nueva
+          </h2>
+      </div>
+      <div class="form-group">
+          <label for="email">Correo Electrónico</label><span
+          *ngIf="!emailContactValidated"
+          class="ml-2 badge badge-danger"
+          >Incorrecto</span>
+          <input type="email" class="form-control" id="email" placeholder="Correo Electrónico" (input)="checkEmail()" [(ngModel)]="user.email" />
+      </div>
+      <div class="form-group" *ngIf="emailContactValidated">
+        <label for="identification" *ngIf="!cuentaInterno">Número de Cédula del Propietario/Representante Legal</label>
+        <label for="identification" *ngIf="cuentaInterno">Número de Cédula del Usuario Interno</label>
+        <span
+        *ngIf="!identificationValidated"
+        class="ml-2 badge badge-danger"
+        >Incorrecto</span>
+        <input type="text" class="form-control" maxlength="10" id="identification" placeholder="Número de Cédula"
+          [(ngModel)]="user.identification" (keyup)="checkCedula()"/>
+      </div>
+      <div class="col-12 mb-3" *ngIf="emailContactValidated && identificationValidated">
+          <small id="cedulaRepresentanteHelp"
+          class="form-text text-muted" [innerHTML]="CedulaData"></small>
+      </div>
+      <div class="form-group" *ngIf="emailContactValidated && identificationValidated && REGCIVILOK && consumoCedula">
+        <label for="identification" *ngIf="aleatorio == 0">Fecha de Nacimiento</label>
+        <label for="identification" *ngIf="aleatorio == 1">Fecha de Expiración de Documento de Identidad</label>
+        <label for="identification" *ngIf="aleatorio == 2">Fecha de Expedición de Documento de Identidad</label><span
+        *ngIf="!identidadConfirmada"
+        class="ml-2 badge badge-danger"
+        >Identidad No Confirmada</span>
+        <input type="text" class="form-control" id="fechaIngresada" [(ngModel)]="fechaIngresada" placeholder="Fecha: DIA/MES/AÑO   -  Ejemplo: 15/09/1986" (input)="confirmarIdentidad()">
+      </div>
+      <div class="form-group" *ngIf="emailContactValidated && identidadConfirmada">
+          <label for="name">Nombre Completo</label>
+          <input type="text" disabled class="form-control" id="name" placeholder="Nombre Completo" [(ngModel)]="user.name" />
+      </div>
+      <div class="form-group" *ngIf="emailContactValidated && identidadConfirmada && (cuentaInterno == false)">
+        <label for="ruc">Número de RUC al que pertenece el Establecimiento</label><span
+        *ngIf="!rucValidated"
+        class="ml-2 badge badge-danger"
+        >Incorrecto</span>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <button type="button" class="btn btn-primary" (click)="checkRuc()"><span class="fas fa-sync"></span></button>
+          </div>
+          <input type="text" class="form-control" maxlength="13" id="ruc" placeholder="Número de RUC" [(ngModel)]="ruc.number" (keyup)="checkRuc()"/>
+        </div>
+      </div>
+      <div class="col-12 mb-3" *ngIf="emailContactValidated && rucValidated">
+          <small id="rucDataIncomming"
+          class="form-text text-muted" [innerHTML]="rucData"></small>
+      </div>
+      <div class="row" *ngIf="esperando">
+        <div class="col-12">
+          <div class="progress mb-3">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%">Espere...</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12" *ngIf="emailContactValidated && rucValidated && SRIOK">
+        <div class="alert alert-danger mt-3" role="alert" *ngIf="!isRepresentantLegal && ruc.tax_payer_type_id == 2">
+            <label class="col-12 text-justify"><strong>Atención</strong><br />
+                El representante legal del RUC {{ruc.number}} es el único que puede iniciar el trámite de inactivación.
+            </label>
+        </div>
+        <div class="alert alert-danger mt-3" role="alert" *ngIf="!isRucOwner && ruc.tax_payer_type_id == 1">
+            <label class="col-12 text-justify"><strong>Atención</strong><br />
+                El dueño del RUC {{ruc.number}} es el único que puede iniciar el trámite de inactivación.
+            </label>
+        </div>
+      </div>
+      <div class="row" *ngIf="(emailContactValidated && cuentaInterno && REGCIVILOK) || (emailContactValidated && rucValidated && SRIOK && !((!isRepresentantLegal && ruc.tax_payer_type_id == 2) || (!isRucOwner && ruc.tax_payer_type_id == 1)))">
+        <div class="col-12 text-center">
+          <button type="submit" *ngIf="!cuentaInterno" [disabled]="!(identificationValidated && consumoCedula && REGCIVILOK && rucValidated && consumoRuc && SRIOK)" class="btn btn-primary mr-2" (click)="registrar()">
+            Crear Cuenta
+          </button>
+          <button type="submit" *ngIf="cuentaInterno" [disabled]="!(identificationValidated && consumoCedula && REGCIVILOK)" class="btn btn-primary mr-2" (click)="registrar()">
+            Crear Cuenta
+          </button>
+          <a [routerLink]="['/login']" class="btn btn-danger">
+            Regresar
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

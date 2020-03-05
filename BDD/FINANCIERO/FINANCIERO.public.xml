@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<database name="FINANCIERO" schema="public" type="PostgreSQL - 12.0 (Debian 12.0-2.pgdg100+1)">
+   <tables>
+      <table name="declaration_attachments" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('declaration_attachments_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial"/>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="declaration_attachment_file_type" nullable="true" remarks="" size="50" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="4" name="declaration_attachment_file_name" nullable="true" remarks="" size="50" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="5" name="declaration_attachment_file" nullable="true" remarks="" size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="0" id="6" name="declaration_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="declaration_attachments_declaration_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="declarations"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="declaration_attachments_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="declaration_declaration_item_value" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('declaration_declaration_item_value_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial"/>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="declaration_item_value_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="declaration_declaration_item_value_declaration_item_value_id_fo" implied="false" onDeleteCascade="true" schema="public" table="declaration_item_values"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="4" name="declaration_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="declaration_declaration_item_value_declaration_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="declarations"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="declaration_declaration_item_value_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="declaration_item_categories" numRows="4" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('declaration_item_categories_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial">
+            <child column="declaration_item_category_id" foreignKey="declaration_items_declaration_item_category_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="declaration_items"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="name" nullable="true" remarks="" size="250" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="4" name="description" nullable="true" remarks="" size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="0" id="5" name="year" nullable="true" remarks="" size="10" type="int4"/>
+         <column autoUpdated="false" digits="0" id="6" name="tax_payer_type_id" nullable="true" remarks="" size="10" type="int4"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="declaration_item_categories_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="declaration_item_values" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('declaration_item_values_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial">
+            <child column="declaration_item_value_id" foreignKey="declaration_declaration_item_value_declaration_item_value_id_fo" implied="false" onDeleteCascade="true" schema="public" table="declaration_declaration_item_value"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="17" id="3" name="value" nullable="true" remarks="" size="17" type="float8"/>
+         <column autoUpdated="false" digits="0" id="4" name="declaration_item_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="declaration_item_values_declaration_item_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="declaration_items"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="declaration_item_values_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="declaration_items" numRows="39" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('declaration_items_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial">
+            <child column="declaration_item_id" foreignKey="declaration_item_values_declaration_item_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="declaration_item_values"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="name" nullable="true" remarks="" size="1024" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="4" name="description" nullable="true" remarks="" size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="0" id="5" name="factor" nullable="true" remarks="" size="10" type="int4"/>
+         <column autoUpdated="false" digits="0" id="6" name="year" nullable="true" remarks="" size="10" type="int4"/>
+         <column autoUpdated="false" digits="0" id="7" name="tax_payer_type_id" nullable="true" remarks="" size="10" type="int4"/>
+         <column autoUpdated="false" digits="0" id="8" name="declaration_item_category_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="declaration_items_declaration_item_category_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="declaration_item_categories"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="declaration_items_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="declarations" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('declarations_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial">
+            <child column="declaration_id" foreignKey="declaration_attachments_declaration_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="declaration_attachments"/>
+            <child column="declaration_id" foreignKey="declaration_declaration_item_value_declaration_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="declaration_declaration_item_value"/>
+            <child column="declaration_id" foreignKey="state_declarations_declaration_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="state_declarations"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="establishment_id" nullable="true" remarks="" size="10" type="int4"/>
+         <column autoUpdated="false" digits="0" id="4" name="declaration_date" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="5" name="year" nullable="true" remarks="" size="10" type="int4"/>
+         <column autoUpdated="false" digits="0" id="6" name="max_date_to_pay" nullable="true" remarks="" size="22" type="timestamp"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="declarations_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="logs" numRows="4" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('logs_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial"/>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="date_time" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="4" name="request" nullable="true" remarks="" size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="0" id="5" name="user_id" nullable="false" remarks="" size="10" type="int4"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="logs_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="migrations" numRows="13" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('migrations_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial"/>
+         <column autoUpdated="false" digits="0" id="1" name="migration" nullable="false" remarks="" size="255" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="2" name="batch" nullable="false" remarks="" size="10" type="int4"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="migrations_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="pay_attachments" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('pay_attachments_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial"/>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="pay_attachment_file_type" nullable="true" remarks="" size="50" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="4" name="pay_attachment_file_name" nullable="true" remarks="" size="50" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="5" name="pay_attachment_file" nullable="true" remarks="" size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="0" id="6" name="pay_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="pay_attachments_pay_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="pays"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="pay_attachments_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="pay_mass_file_attachments" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('pay_mass_file_attachments_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial"/>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="pay_mass_file_attachment_file_type" nullable="true" remarks="" size="50" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="4" name="pay_mass_file_attachment_file_name" nullable="true" remarks="" size="50" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="5" name="pay_mass_file_attachment_file" nullable="true" remarks="" size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="0" id="6" name="date" nullable="true" remarks="" size="22" type="timestamp"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="pay_mass_file_attachments_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="pay_taxes" numRows="67" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('pay_taxes_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial"/>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="year" nullable="true" remarks="" size="10" type="int4"/>
+         <column autoUpdated="false" digits="0" id="4" name="trimester" nullable="true" remarks="" size="10" type="int4"/>
+         <column autoUpdated="false" digits="17" id="5" name="value" nullable="true" remarks="" size="17" type="float8"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="pay_taxes_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="pays" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('pays_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial">
+            <child column="pay_id" foreignKey="pay_attachments_pay_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="pay_attachments"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="17" id="3" name="amount_payed" nullable="true" remarks="" size="17" type="float8"/>
+         <column autoUpdated="false" digits="17" id="4" name="amount_to_pay" nullable="true" remarks="" size="17" type="float8"/>
+         <column autoUpdated="false" digits="0" id="5" name="pay_date" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="6" name="payed" nullable="true" remarks="" size="1" type="bool"/>
+         <column autoUpdated="false" digits="0" id="7" name="code" nullable="true" remarks="" size="50" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="8" name="max_pay_date" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="9" name="ruc_id" nullable="true" remarks="" size="10" type="int4"/>
+         <column autoUpdated="false" digits="17" id="10" name="amount_to_pay_taxes" nullable="true" remarks="" size="17" type="float8"/>
+         <column autoUpdated="false" digits="17" id="11" name="amount_to_pay_base" nullable="true" remarks="" size="17" type="float8"/>
+         <column autoUpdated="false" digits="17" id="12" name="amount_to_pay_fines" nullable="true" remarks="" size="17" type="float8"/>
+         <column autoUpdated="false" digits="0" id="13" name="notes" nullable="true" remarks="" size="2147483647" type="text"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="pays_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="state_declarations" numRows="0" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('state_declarations_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial"/>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="justification" nullable="true" remarks="" size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="0" id="4" name="moment" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="5" name="declaration_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="state_declarations_declaration_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="declarations"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="6" name="state_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="state_declarations_state_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="states"/>
+         </column>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="state_declarations_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="states" numRows="3" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('states_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial">
+            <child column="state_id" foreignKey="state_declarations_state_id_foreign" implied="false" onDeleteCascade="true" schema="public" table="state_declarations"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="created_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="2" name="updated_at" nullable="true" remarks="" size="22" type="timestamp"/>
+         <column autoUpdated="false" digits="0" id="3" name="name" nullable="true" remarks="" size="50" type="varchar"/>
+         <column autoUpdated="false" digits="0" id="4" name="description" nullable="true" remarks="" size="2147483647" type="text"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="states_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+   </tables>
+</database>

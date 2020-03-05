@@ -1,0 +1,125 @@
+<div class="row">
+    <h1 class="col-12 text-right">
+        BITÁCORA
+    </h1>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="form-group">
+            <label for="ruc">Número de RUC</label><span
+            *ngIf="!rucValidated"
+            class="ml-2 badge badge-danger"
+            >Incorrecto</span>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button type="button" class="btn btn-primary" (click)="checkRuc()"><span class="fas fa-sync"></span></button>
+              </div>
+              <input type="text" class="form-control" maxlength="13" id="ruc" placeholder="Número de RUC" [(ngModel)]="ruc.number" (keyup)="checkRuc()"/>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mb-3" *ngIf="rucValidated">
+        <small id="rucDataIncomming"
+        class="form-text text-muted" [innerHTML]="rucData"></small>
+    </div>
+</div>
+<div class="row mb-2">
+    <div class="col-12">
+        <button type="button" *ngIf="rucValidated && SRIOK" class="btn btn-info" (click)="buscarBitacora()"><span class="fas fa-search"></span>&nbsp;Consultar</button>
+    </div>
+</div>
+<div class="row" *ngIf="mostrarEstablecimientos">
+    <h4 class="col-12">
+        <strong>&nbsp;Listado de Establecimientos</strong>
+    </h4>
+</div>
+<div style="width: 100%; overflow-x: auto;" *ngIf="mostrarEstablecimientos">
+    <div class="row">
+        <div class="col-12 mt-2">
+            <ng-table
+                [config]="config"
+                (cellClicked)="onCellClick($event)"
+                (tableChanged)="onChangeTable(config)"
+                [rows]="rows"
+                [columns]="columns">
+            </ng-table>
+        </div>
+        </div>
+</div>
+<div class="row" *ngIf="mostrarEstablecimientos">
+    <div class="col-12">
+    <ngb-pagination
+        *ngIf="config.paging"
+        [(page)]="currentPageEstablishments"
+        [pageSize]="recordsByPageEstablishments"
+        [maxSize]="10"
+        [boundaryLinks]="true"
+        (pageChange)="onChangeTable(config, $event)"
+        [collectionSize]="establishments.length">
+        <ng-template ngbPaginationFirst>Primera</ng-template>
+        <ng-template ngbPaginationPrevious>Anterior</ng-template>
+        <ng-template ngbPaginationNext>Siguiente</ng-template>
+        <ng-template ngbPaginationLast>Última</ng-template>
+    </ngb-pagination>
+    </div>
+</div>
+<div class="row mt-2" *ngIf="mostrarRegistros">
+    <h4 class="col-12">
+        <strong>&nbsp;Listado de Registros</strong>
+    </h4>
+</div>
+<div style="width: 100%; overflow-x: auto;" *ngIf="mostrarRegistros">
+    <div class="row">
+        <div class="col-12 mt-2">
+            <ng-table
+                [config]="config"
+                (cellClicked)="onCellClickRegisters($event)"
+                (tableChanged)="onChangeTableRegisters(config)"
+                [rows]="rowsRegisters"
+                [columns]="columnsRegisters">
+            </ng-table>
+        </div>
+        </div>
+</div>
+<div class="row" *ngIf="mostrarRegistros">
+    <div class="col-12">
+    <ngb-pagination
+        *ngIf="config.paging"
+        [(page)]="currentPageRegisters"
+        [pageSize]="recordsByPageRegisters"
+        [maxSize]="10"
+        [boundaryLinks]="true"
+        (pageChange)="onChangeTableRegisters(config, $event)"
+        [collectionSize]="dataRegisters.length">
+        <ng-template ngbPaginationFirst>Primera</ng-template>
+        <ng-template ngbPaginationPrevious>Anterior</ng-template>
+        <ng-template ngbPaginationNext>Siguiente</ng-template>
+        <ng-template ngbPaginationLast>Última</ng-template>
+    </ngb-pagination>
+    </div>
+</div>
+<div class="row mt-2" *ngIf="mostrarStates">
+    <h4 class="col-12">
+        <strong>&nbsp;Estados</strong>
+    </h4>
+</div>
+<div class="row mt-2" *ngIf="mostrarStates">
+    <div class="col-12">
+        <table class="table table-hover mt-2">
+            <thead>
+            <tr>
+                <th>Fecha y Hora</th>
+                <th>Bandeja</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let state of states_to_show">
+                <td>{{state.state.created_at}}</td>
+                <td>{{state.state_name}}</td>
+                <td><span *ngIf="state.last" class="badge badge-success">ESTADO ACTUAL</span></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

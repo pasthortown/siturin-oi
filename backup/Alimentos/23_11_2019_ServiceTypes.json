@@ -1,0 +1,362 @@
+[
+    {
+        "ServiceType": {
+            "id": 1,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Menú",
+            "register_type_id": 2
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 2,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Autoservicio",
+            "register_type_id": 2
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 3,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Buffet",
+            "register_type_id": 2
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 4,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Menú fijo",
+            "register_type_id": 2
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 5,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Servicio a domicilio",
+            "register_type_id": 2
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 6,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Servicio al auto",
+            "register_type_id": 2
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 7,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Menú",
+            "register_type_id": 6
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 8,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Autoservicio",
+            "register_type_id": 6
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 9,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Buffet",
+            "register_type_id": 6
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 10,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Menú fijo",
+            "register_type_id": 6
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 11,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Servicio a domicilio",
+            "register_type_id": 6
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 12,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Servicio al auto",
+            "register_type_id": 6
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 13,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Menú",
+            "register_type_id": 11
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 14,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Autoservicio",
+            "register_type_id": 11
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 15,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Buffet",
+            "register_type_id": 11
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 16,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Menú fijo",
+            "register_type_id": 11
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 17,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Servicio a domicilio",
+            "register_type_id": 11
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 18,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Servicio al auto",
+            "register_type_id": 11
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 19,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Menú",
+            "register_type_id": 33
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 20,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Autoservicio",
+            "register_type_id": 33
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 21,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Buffet",
+            "register_type_id": 33
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 22,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Menú fijo",
+            "register_type_id": 33
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 23,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Servicio a domicilio",
+            "register_type_id": 33
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 24,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Servicio al auto",
+            "register_type_id": 33
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 25,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Menú",
+            "register_type_id": 37
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 26,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Autoservicio",
+            "register_type_id": 37
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 27,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Buffet",
+            "register_type_id": 37
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 28,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Menú fijo",
+            "register_type_id": 37
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 29,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Servicio a domicilio",
+            "register_type_id": 37
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 30,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Servicio al auto",
+            "register_type_id": 37
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 31,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Menú",
+            "register_type_id": 43
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 32,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Autoservicio",
+            "register_type_id": 43
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 33,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Buffet",
+            "register_type_id": 43
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 34,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Menú fijo",
+            "register_type_id": 43
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 35,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Servicio a domicilio",
+            "register_type_id": 43
+        },
+        "attach": []
+    },
+    {
+        "ServiceType": {
+            "id": 36,
+            "created_at": "2019-11-19 11:17:46",
+            "updated_at": "2019-11-19 11:17:46",
+            "description": "Servicio al auto",
+            "register_type_id": 43
+        },
+        "attach": []
+    }
+]

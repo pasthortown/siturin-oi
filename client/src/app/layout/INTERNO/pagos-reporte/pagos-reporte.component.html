@@ -1,0 +1,86 @@
+<div class="row">
+    <h1 class="col-12 text-right">
+       Órdenes de Pagos - MINTUR
+    </h1>
+</div>
+<div class="row">
+    <div class="col-12">
+        <table class="table table-hover mt-2">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="row">
+                            <h3 class="col-12">Descargar Órdenes de Pagos</h3>
+                            <div class="col-12">
+                                <div class="btn-toolbar" role="toolbar">
+                                    <div class="btn-group mr-2" role="group">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1">Desde</span>
+                                            </div>
+                                            <input type="date" class="form-control" id="desde"
+                                                name="desde" placeholder="Desde" [ngModel]="
+                                                    desde | date: 'y-MM-dd'" (ngModelChange)="
+                                                    desde = $event" />
+                                        </div>
+                                    </div>
+                                    <div class="btn-group mr-2" role="group">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1">Hasta</span>
+                                            </div>
+                                            <input type="date" class="form-control" id="hasta"
+                                                name="hasta" placeholder="hasta" [ngModel]="
+                                                    hasta | date: 'y-MM-dd'" (ngModelChange)="
+                                                    hasta = $event" />
+                                        </div>
+                                    </div>
+                                    <div class="btn-group mr-2" role="group">
+                                        <button type="button" class="btn btn-success" (click)="descargarReporte()"><span class="fas fa-download"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="container">
+    <div class="col-12">
+        <div *ngIf="mostrar_reporte" class="alert alert-warning" role="alert">
+           <h3 class="col-12 text-left"><strong>REPORTE</strong></h3>
+           <h4 class="col-12 text-center">Pagos Reportados ( {{pagos_reportados.length}} )</h4>
+           <table class="table col-12">
+               <tbody>
+                    <tr *ngFor="let pago of pagos_reportados">
+                        <th>Concepto:</th>
+                        <td>{{pago.referencia_transaccion}}</td>
+                        <th>Código de Orden de Pago:</th>
+                        <td>{{pago.codigo_del_tercero}}</td>
+                        <th>Valor:</th>
+                        <td>{{pago.valor}}</td>
+                    </tr>
+               </tbody>
+           </table>
+           <strong><h4 class="col-12 text-center">Pagos actualizados ( {{pagos_actualizados.length}} )</h4></strong> 
+           <table class="table col-12">
+                <tbody>
+                     <tr *ngFor="let pago of pagos_actualizados">
+                         <th>Concepto:</th>
+                         <td>{{pago.referencia_transaccion}}</td>
+                         <th>Código de Orden de Pago:</th>
+                         <td>{{pago.codigo_del_tercero}}</td>
+                         <th>Valor:</th>
+                         <td>{{pago.valor}}</td>
+                         <th>Pagado:</th>
+                         <td><span class="badge badge-success" *ngIf="pago.payed">Pagado</span><span class="badge badge-danger" *ngIf="!pago.payed">No Pagado</span></td>
+                     </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<input type="file" [hidden]="true"  #file class="form-control" (change)="CodificarArchivoPagos($event)" accept="application/csv" />

@@ -1,0 +1,16 @@
+export const environment = {
+  production: true,
+  api_auth: 'http://ws-siturin-auth.turismo.gob.ec/',
+  api_dinardap: 'http://ws-siturin-dinardap.turismo.gob.ec/',
+  api_consultor: 'http://ws-siturin-consultor.turismo.gob.ec/',
+  api_exporter: 'http://ws-siturin-exporter.turismo.gob.ec/',
+  api_base: 'http://ws-siturin-base.turismo.gob.ec/',
+  api_alojamiento: 'http://ws-siturin-alojamiento.turismo.gob.ec/',
+  api_financiero: 'http://ws-siturin-financiero.turismo.gob.ec/',
+  api_mailer: 'http://ws-siturin-mailer.turismo.gob.ec/',
+  api_catastro: 'http://ws-siturin-catastro.turismo.gob.ec/',
+  api_alimentosbebidas: 'http://ws-siturin-alimentos.turismo.gob.ec/',
+  api_gad: 'http://ws-siturin-gad.turismo.gob.ec/',
+  api_chat: 'http://siturin-pruebas.turismo.gob.ec:5000',
+  gmapapiKey: 'AIzaSyCGUwCcM-LKjRK4rjbBJ06_GLmX2LaYzfg',
+};

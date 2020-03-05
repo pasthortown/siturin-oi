@@ -1,0 +1,4274 @@
+[
+    {
+        "CapacityType": {
+            "id": 35,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 8
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 36,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 8
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 37,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 8
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 44,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 9
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 45,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 9
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 46,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 9
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 54,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 10
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 55,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 10
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 56,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 10
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 64,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 12
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 65,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 12
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 66,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 12
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 72,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 13
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 73,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 13
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 74,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 13
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 82,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 14
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 83,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 14
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 84,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 14
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 92,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 16
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 93,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 16
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 94,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 16
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 99,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 17
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 100,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 17
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 101,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 17
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 249,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 43
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 108,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 18
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 109,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 18
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 110,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 18
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 117,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 20
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 118,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 20
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 119,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 20
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 125,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 21
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 126,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 21
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 127,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 21
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 135,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 22
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 136,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 22
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 137,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 22
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 145,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 24
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 146,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 24
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 147,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 24
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 152,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 25
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 153,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 25
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 154,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 25
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 161,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 27
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 162,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 27
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 163,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 27
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 171,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 29
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 172,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 29
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 173,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 29
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 180,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 31
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 182,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 31
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 189,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 34
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 190,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 34
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 191,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 34
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 197,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 35
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 198,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 35
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 199,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 35
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 207,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 36
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 208,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 36
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 209,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 36
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 217,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 38
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 218,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 38
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 219,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 38
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 227,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 40
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 228,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 40
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 229,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 40
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 236,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 41
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 237,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 41
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 238,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 41
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 247,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 43
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 248,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 43
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 1,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 3
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 2,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 3
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 3,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 3
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 8,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 4
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 9,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 4
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 10,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 4
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 17,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 5
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 18,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 5
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 19,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 5
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 26,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 6
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 27,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 6
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 28,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 6
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 220,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cuádruple",
+            "description": "<p>Cuádruple</p>\n",
+            "bed_quantity": 4,
+            "is_island": false,
+            "spaces": 4,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 38
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 40,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 8
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 181,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 31
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 257,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Individual o simple",
+            "description": "<p>Individual o simple</p>\n",
+            "bed_quantity": 1,
+            "is_island": false,
+            "spaces": 1,
+            "editable_beds": false,
+            "editable_spaces": false,
+            "register_type_id": 45
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 258,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Doble",
+            "description": "<p>Doble</p>\n",
+            "bed_quantity": 2,
+            "is_island": false,
+            "spaces": 2,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 45
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 259,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Triple",
+            "description": "<p>Triple</p>\n",
+            "bed_quantity": 3,
+            "is_island": false,
+            "spaces": 3,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 45
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 38,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cuádruple",
+            "description": "<p>Cuádruple</p>\n",
+            "bed_quantity": 4,
+            "is_island": false,
+            "spaces": 4,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 8
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 47,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cuádruple",
+            "description": "<p>Cuádruple</p>\n",
+            "bed_quantity": 4,
+            "is_island": false,
+            "spaces": 4,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 9
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 57,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cuádruple",
+            "description": "<p>Cuádruple</p>\n",
+            "bed_quantity": 4,
+            "is_island": false,
+            "spaces": 4,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 10
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 75,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cuádruple",
+            "description": "<p>Cuádruple</p>\n",
+            "bed_quantity": 4,
+            "is_island": false,
+            "spaces": 4,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 13
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 85,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cuádruple",
+            "description": "<p>Cuádruple</p>\n",
+            "bed_quantity": 4,
+            "is_island": false,
+            "spaces": 4,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 14
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 102,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cuádruple",
+            "description": "<p>Cuádruple</p>\n",
+            "bed_quantity": 4,
+            "is_island": false,
+            "spaces": 4,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 17
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 31,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 6
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 111,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cuádruple",
+            "description": "<p>Cuádruple</p>\n",
+            "bed_quantity": 4,
+            "is_island": false,
+            "spaces": 4,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 18
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 128,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cuádruple",
+            "description": "<p>Cuádruple</p>\n",
+            "bed_quantity": 4,
+            "is_island": false,
+            "spaces": 4,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 21
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 138,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cuádruple",
+            "description": "<p>Cuádruple</p>\n",
+            "bed_quantity": 4,
+            "is_island": false,
+            "spaces": 4,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 22
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 155,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cuádruple",
+            "description": "<p>Cuádruple</p>\n",
+            "bed_quantity": 4,
+            "is_island": false,
+            "spaces": 4,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 25
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 164,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cuádruple",
+            "description": "<p>Cuádruple</p>\n",
+            "bed_quantity": 4,
+            "is_island": false,
+            "spaces": 4,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 27
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 174,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cuádruple",
+            "description": "<p>Cuádruple</p>\n",
+            "bed_quantity": 4,
+            "is_island": false,
+            "spaces": 4,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 29
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 183,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cuádruple",
+            "description": "<p>Cuádruple</p>\n",
+            "bed_quantity": 4,
+            "is_island": false,
+            "spaces": 4,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 31
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 200,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cuádruple",
+            "description": "<p>Cuádruple</p>\n",
+            "bed_quantity": 4,
+            "is_island": false,
+            "spaces": 4,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 35
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 210,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cuádruple",
+            "description": "<p>Cuádruple</p>\n",
+            "bed_quantity": 4,
+            "is_island": false,
+            "spaces": 4,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 36
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 239,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cuádruple",
+            "description": "<p>Cuádruple</p>\n",
+            "bed_quantity": 4,
+            "is_island": false,
+            "spaces": 4,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 41
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 176,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 29
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 11,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cuádruple",
+            "description": "<p>Cuádruple</p>\n",
+            "bed_quantity": 4,
+            "is_island": false,
+            "spaces": 4,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 4
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 20,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cuádruple",
+            "description": "<p>Cuádruple</p>\n",
+            "bed_quantity": 4,
+            "is_island": false,
+            "spaces": 4,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 5
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 29,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cuádruple",
+            "description": "<p>Cuádruple</p>\n",
+            "bed_quantity": 4,
+            "is_island": false,
+            "spaces": 4,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 6
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 30,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Multiple (+ 5 pax)",
+            "description": "<p>Multiple (+ 5 pax)</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 6
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 32,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 6
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 33,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 6
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 34,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 6
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 39,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Multiple (+ 5 pax)",
+            "description": "<p>Multiple (+ 5 pax)</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 8
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 41,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 8
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 42,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 8
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 43,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 8
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 48,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Multiple (+ 5 pax)",
+            "description": "<p>Multiple (+ 5 pax)</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 9
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 49,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 9
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 50,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 9
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 51,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 9
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 52,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 9
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 53,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación compartida",
+            "description": "<p>Habitación compartida</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 9
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 58,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Multiple (+ 5 pax)",
+            "description": "<p>Multiple (+ 5 pax)</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 10
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 59,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 10
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 60,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 10
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 61,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 10
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 62,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 10
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 63,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación compartida",
+            "description": "<p>Habitación compartida</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 10
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 67,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 12
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 68,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 12
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 69,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cabañas",
+            "description": "<p>Cabañas</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 12
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 70,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 12
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 71,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 12
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 76,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Multiple (+ 5 pax)",
+            "description": "<p>Multiple (+ 5 pax)</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 13
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 77,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 13
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 78,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 13
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 79,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cabañas",
+            "description": "<p>Cabañas</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 13
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 80,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 13
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 81,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 13
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 86,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Multiple (+ 5 pax)",
+            "description": "<p>Multiple (+ 5 pax)</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 14
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 87,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 14
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 88,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 14
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 89,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cabañas",
+            "description": "<p>Cabañas</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 14
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 90,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 14
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 91,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 14
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 95,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 16
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 96,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 16
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 97,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 16
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 98,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 16
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 103,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Multiple (+ 5 pax)",
+            "description": "<p>Multiple (+ 5 pax)</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 17
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 104,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 17
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 105,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 17
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 106,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 17
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 107,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 17
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 112,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Multiple (+ 5 pax)",
+            "description": "<p>Multiple (+ 5 pax)</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 18
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 113,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 18
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 114,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 18
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 115,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 18
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 116,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 18
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 120,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 20
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 121,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 20
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 122,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cabañas",
+            "description": "<p>Cabañas</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 20
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 123,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 20
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 124,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 20
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 129,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Multiple (+ 5 pax)",
+            "description": "<p>Multiple (+ 5 pax)</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 21
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 130,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 21
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 131,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 21
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 132,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cabañas",
+            "description": "<p>Cabañas</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 21
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 133,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 21
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 134,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 21
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 139,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Multiple (+ 5 pax)",
+            "description": "<p>Multiple (+ 5 pax)</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 22
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 140,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 22
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 141,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 22
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 142,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cabañas",
+            "description": "<p>Cabañas</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 22
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 143,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 22
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 144,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 22
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 148,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 24
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 149,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 24
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 150,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 24
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 151,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 24
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 156,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Multiple (+ 5 pax)",
+            "description": "<p>Multiple (+ 5 pax)</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 25
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 157,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 25
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 158,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 25
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 159,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 25
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 160,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 25
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 165,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Multiple (+ 5 pax)",
+            "description": "<p>Multiple (+ 5 pax)</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 27
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 166,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 27
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 167,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 27
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 168,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 27
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 169,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 27
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 170,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación compartida",
+            "description": "<p>Habitación compartida</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 27
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 175,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Multiple (+ 5 pax)",
+            "description": "<p>Multiple (+ 5 pax)</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 29
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 177,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 29
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 178,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 29
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 179,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 29
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 184,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Multiple (+ 5 pax)",
+            "description": "<p>Multiple (+ 5 pax)</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 31
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 185,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 31
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 186,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 31
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 187,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 31
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 188,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 31
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 192,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 34
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 193,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 34
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 194,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 34
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 195,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 34
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 196,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación compartida",
+            "description": "<p>Habitación compartida</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 34
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 201,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Multiple (+ 5 pax)",
+            "description": "<p>Multiple (+ 5 pax)</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 35
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 202,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 35
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 203,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 35
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 204,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 35
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 205,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 35
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 206,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación compartida",
+            "description": "<p>Habitación compartida</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 35
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 211,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Multiple (+ 5 pax)",
+            "description": "<p>Multiple (+ 5 pax)</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 36
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 212,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 36
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 213,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 36
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 214,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 36
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 215,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 36
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 216,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación compartida",
+            "description": "<p>Habitación compartida</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 36
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 221,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Multiple (+ 5 pax)",
+            "description": "<p>Multiple (+ 5 pax)</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 38
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 222,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 38
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 223,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 38
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 224,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 38
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 225,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 38
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 226,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación compartida",
+            "description": "<p>Habitación compartida</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 38
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 230,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 40
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 231,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 40
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 232,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cabañas",
+            "description": "<p>Cabañas</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 40
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 233,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 40
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 234,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 40
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 235,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación compartida",
+            "description": "<p>Habitación compartida</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 40
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 240,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Multiple (+ 5 pax)",
+            "description": "<p>Multiple (+ 5 pax)</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 41
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 241,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 41
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 242,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 41
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 243,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cabañas",
+            "description": "<p>Cabañas</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 41
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 244,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 41
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 245,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 41
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 246,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación compartida",
+            "description": "<p>Habitación compartida</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 41
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 4,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 3
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 5,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 3
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 6,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 3
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 7,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 3
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 12,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Multiple (+ 5 pax)",
+            "description": "<p>Multiple (+ 5 pax)</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 4
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 13,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 4
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 14,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 4
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 15,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 4
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 16,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 4
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 21,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Multiple (+ 5 pax)",
+            "description": "<p>Multiple (+ 5 pax)</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 5
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 22,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 5
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 23,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 5
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 24,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 5
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 25,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 5
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 250,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cuádruple",
+            "description": "<p>Cuádruple</p>\n",
+            "bed_quantity": 4,
+            "is_island": false,
+            "spaces": 4,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 43
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 260,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Cuádruple",
+            "description": "<p>Cuádruple</p>\n",
+            "bed_quantity": 4,
+            "is_island": false,
+            "spaces": 4,
+            "editable_beds": true,
+            "editable_spaces": false,
+            "register_type_id": 45
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 251,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Multiple (+ 5 pax)",
+            "description": "<p>Multiple (+ 5 pax)</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 43
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 252,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 43
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 253,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 43
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 254,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 43
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 255,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 43
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 256,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación compartida",
+            "description": "<p>Habitación compartida</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 43
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 261,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Multiple (+ 5 pax)",
+            "description": "<p>Multiple (+ 5 pax)</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 45
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 262,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite",
+            "description": "<p>Suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 45
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 263,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Junior suite",
+            "description": "<p>Junior suite</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 45
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 264,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Suite presidencial",
+            "description": "<p>Suite presidencial</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 45
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 265,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación superior",
+            "description": "<p>Habitación superior</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 45
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 266,
+            "created_at": "2019-09-03 19:28:54",
+            "updated_at": "2019-09-03 19:28:54",
+            "name": "Habitación compartida",
+            "description": "<p>Habitación compartida</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 45
+        },
+        "attach": []
+    },
+    {
+        "CapacityType": {
+            "id": 267,
+            "created_at": "2019-09-03 21:02:03",
+            "updated_at": "2019-09-03 21:02:03",
+            "name": "Inmueble de uso Turístico",
+            "description": "<p>Inmueble de uso Tur&iacute;stico</p>\n",
+            "bed_quantity": 999,
+            "is_island": false,
+            "spaces": 999,
+            "editable_beds": true,
+            "editable_spaces": true,
+            "register_type_id": 47
+        },
+        "attach": []
+    }
+]

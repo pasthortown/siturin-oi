@@ -1,0 +1,100 @@
+<app-navbar></app-navbar>
+<app-sidebar (collapsedEvent)="receiveCollapsed($event)"></app-sidebar>
+<section class="main-container" [ngClass]="{ collapsed: collapedSideBar }">
+  <router-outlet></router-outlet>
+</section>
+<div class="chatspace" *ngIf="!chat_minimized">
+  <div class="row" (click)="change_chat_state()">
+    <div class="col-6 text-light mt-1">
+      &nbsp;Asistente Virtual
+    </div>
+    <div class="col-6 text-right">
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-sm btn-warning" (click)="change_chat_state()">
+          <i class="fas fa-window-minimize"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-12">
+      <div class="messagespace col-12">
+        <div class="row">
+          <div class="col-12 mt-1">
+            <div class="col-12" style="background-color: #429b88; color: whitesmoke; border-radius: 5px; line-height: 15px;">
+              <div class="row">
+                <div class="col-12 text-left mt-1">
+                  <small><strong>Asistente Virtual</strong></small>
+                </div>
+                <div class="col-12 text-justify" style="font-style: italic;">
+                  <small>Saludos, Hay algo en lo que te pueda servir?</small>
+                </div>
+                <div class="col-12 text-right mb-1">
+                  <small><i>{{today | date: 'y-MM-dd'}}</i></small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" *ngFor="let line of conversacion">
+          <div class="col-12 mt-1">
+            <div class="col-12" style="background-color: #727575; color: whitesmoke; border-radius: 5px; line-height: 15px;" *ngIf="line.from == 'Tu'">
+              <div class="row">
+                <div class="col-12 text-left mt-1">
+                  <small><strong>{{line.from}}</strong></small>
+                </div>
+                <div class="col-12 text-justify" style="font-style: italic;">
+                  <small [innerHTML]="line.message"></small>
+                </div>
+                <div class="col-12 text-right mb-1">
+                  <small><i>{{line.time | date: 'y-MM-dd'}}</i></small>
+                </div>
+              </div>
+            </div>
+            <div class="col-12" style="background-color: #429b88; color: whitesmoke; border-radius: 5px; line-height: 15px;" *ngIf="line.from !== 'Tu'">
+              <div class="row">
+                <div class="col-12 text-left mt-1">
+                  <small><strong>{{line.from}}</strong></small>
+                </div>
+                <div class="col-12 text-justify" style="font-style: italic;">
+                  <small [innerHTML]="line.message"></small>
+                </div>
+                <div class="col-12 text-right mb-1">
+                  <small><i>{{line.time | date: 'y-MM-dd'}}</i></small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" #lastLine style="height: 100px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Mensaje..." [disabled]="enviandoTexto" [(ngModel)]="textoEnviarIA" (keyup)="tratarenviar($event)">
+        <div class="input-group-append">
+          <button  class="btn btn-success" (click)="enviar(null)">
+            <i class="far fa-share-square"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="chatspace-minimized" *ngIf="chat_minimized">
+  <div class="row" (click)="change_chat_state()">
+    <div class="col-6 text-light mt-1">
+      &nbsp;Asistente Virtual
+    </div>
+    <div class="col-6 text-right">
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-sm btn-warning" (click)="change_chat_state()">
+          <i class="fas fa-window-maximize"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,125 @@
+<div class="row">
+   <h1 class="col-12 text-right">
+      ApprovalStateReport
+   </h1>
+</div>
+<div class="row">
+   <div class="col-12">
+      <div class="btn-toolbar" role="toolbar">
+         <div class="btn-group mr-2" role="group">
+            <button type="button" class="btn btn-primary" title="Actualizar" (click)="goToPage(currentPage)"><i class="fas fa-sync"></i></button>
+         </div>
+         <div class="btn-group mr-2" role="group">
+            <button type="button" title="Nuevo" class="btn btn-success" (click)="newApprovalStateReport(content)"><i class="fas fa-file"></i></button>
+            <button type="button" title="Editar" class="btn btn-warning" (click)="editApprovalStateReport(content)"><i class="fas fa-edit"></i></button>
+         </div>
+         <div class="btn-group mr-2" role="group">
+            <button type="button" title="Eliminar" class="btn btn-danger" (click)="deleteApprovalStateReport()"><i class="fas fa-trash"></i></button>
+         </div>
+         <div class="btn-group mr-2" role="group">
+            <button type="button" title="BackUp" class="btn btn-dark" (click)="backup()"><i class="fas fa-download"></i></button>
+            <button type="button" title="Exportar CSV" class="btn btn-dark" (click)="toCSV()"><i class="fas fa-file-csv"></i></button>
+            <button type="button" title="Cargar" class="btn btn-dark" (click)="uploadInput.click()"><i class="fas fa-upload"></i></button>
+            <input [hidden]="true" type="file" class="form-control" #uploadInput (change)="decodeUploadFile($event)" accept=".json"/>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="row">
+   <div class="col-12">
+      <table class="table table-hover mt-2">
+         <thead>
+            <tr>
+               <th>Seleccionado</th>
+               <th>background</th>
+               <th>actions_done</th>
+               <th>conclution</th>
+               <th>recomendation</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr *ngFor="let approval_state_report of approval_state_reports" (click)="selectApprovalStateReport(approval_state_report)">
+               <td class="text-right"><span *ngIf="approval_state_reportSelected === approval_state_report" class="far fa-hand-point-right"></span></td>
+               <td>{{approval_state_report.background}}</td>
+               <td>{{approval_state_report.actions_done}}</td>
+               <td>{{approval_state_report.conclution}}</td>
+               <td>{{approval_state_report.recomendation}}</td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+</div>
+<div class="row">
+   <div class="col-12">
+      <div class="btn-toolbar" role="toolbar">
+         <div class="btn-group mr-2" role="group">
+            <button type="button" class="btn btn-light" *ngIf="currentPage === 1" title="Primera Página" disabled>Primera</button>
+            <button type="button" class="btn btn-light" *ngIf="currentPage !== 1" title="Primera Página" (click)="goToPage(1)">Primera</button>
+            <button type="button" class="btn btn-light" *ngIf="currentPage > 1" title="Página Anterior" (click)="goToPage((currentPage*1) - 1)">{{(currentPage * 1) - 1}}</button>
+            <button type="button" class="btn btn-primary" title="Página Actual">{{currentPage}}</button>
+            <button type="button" class="btn btn-light" *ngIf="currentPage < lastPage" title="Página Siguiente" (click)="goToPage((currentPage*1) + 1)">{{(currentPage * 1) + 1}}</button>
+            <button type="button" class="btn btn-light" *ngIf="currentPage !== lastPage" title="Última Página" (click)="goToPage(lastPage)">Última</button>
+            <button type="button" class="btn btn-light" *ngIf="currentPage === lastPage" title="Última Página" disabled>Última</button>
+         </div>
+         <div class="input-group">
+            <div class="input-group-prepend">
+               <button type="button" class="input-group-text btn btn-success" title="Ir a la Página" (click)="goToPage(goToPageNumber.value)">Ir a</button>
+            </div>
+            <input type="number" min="{{1}}" max="{{lastPage}}" class="form-control" placeholder="Ir a la Página" #goToPageNumber>
+         </div>
+      </div>
+   </div>
+</div>
+<ng-template #content let-modal>
+   <div class="modal-header">
+      <h4 class="modal-title">Datos:</h4>
+      <button type="button" class="close" (click)="modal.dismiss('Cross click')">
+         <span>&times;</span>
+      </button>
+   </div>
+   <div class="modal-body">
+      <div class="row">
+         <div class="col-12">
+            <div class="form-group row">
+               <label for="background" class="col-4 col-form-label">background</label>
+               <div class="col-8">
+                  <ck-editor id="background" name="background" skin="moono-lisa" [(ngModel)]="approval_state_reportSelected.background"></ck-editor>
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="actions_done" class="col-4 col-form-label">actions_done</label>
+               <div class="col-8">
+                  <ck-editor id="actions_done" name="actions_done" skin="moono-lisa" [(ngModel)]="approval_state_reportSelected.actions_done"></ck-editor>
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="conclution" class="col-4 col-form-label">conclution</label>
+               <div class="col-8">
+                  <ck-editor id="conclution" name="conclution" skin="moono-lisa" [(ngModel)]="approval_state_reportSelected.conclution"></ck-editor>
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="recomendation" class="col-4 col-form-label">recomendation</label>
+               <div class="col-8">
+                  <ck-editor id="recomendation" name="recomendation" skin="moono-lisa" [(ngModel)]="approval_state_reportSelected.recomendation"></ck-editor>
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="approval_state_id" class="col-4 col-form-label">ApprovalState</label>
+               <div class="col-8">
+                  <select class="form-control" id="approval_state_id" name="approval_state_id" [(ngModel)]="approval_state_reportSelected.approval_state_id">
+                     <option value="0" selected>Seleccione...</option>
+                     <option *ngFor="let approval_state of approval_states" value={{approval_state.id}}>
+                        {{approval_state.id}}
+                     </option>
+                  </select>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="modal-footer">
+      <button type="button" class="btn btn-outline-success" (click)="modal.close('Guardar click')">Guardar</button>
+      <button type="button" class="btn btn-outline-danger" (click)="modal.close('Cancelar click')">Cancelar</button>
+   </div>
+</ng-template>

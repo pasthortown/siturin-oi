@@ -1,0 +1,110 @@
+[
+    {
+        "AccountRol": {
+            "id": 1,
+            "created_at": null,
+            "updated_at": "2019-09-03 19:56:20",
+            "name": "Administrador",
+            "description": "Administrador",
+            "code": "1",
+            "father_code": "-"
+        },
+        "attach": []
+    },
+    {
+        "AccountRol": {
+            "id": 2,
+            "created_at": null,
+            "updated_at": "2019-09-03 19:56:20",
+            "name": "Administrador RUC",
+            "description": "Administrador RUC",
+            "code": "2",
+            "father_code": "-"
+        },
+        "attach": []
+    },
+    {
+        "AccountRol": {
+            "id": 3,
+            "created_at": null,
+            "updated_at": "2019-09-03 19:56:20",
+            "name": "Co-Administrador RUC",
+            "description": "Co-Administrador RUC",
+            "code": "3",
+            "father_code": "-"
+        },
+        "attach": []
+    },
+    {
+        "AccountRol": {
+            "id": 4,
+            "created_at": null,
+            "updated_at": "2019-09-03 19:56:20",
+            "name": "Administrador Establecimiento",
+            "description": "Administrador Establecimiento",
+            "code": "4",
+            "father_code": "-"
+        },
+        "attach": []
+    },
+    {
+        "AccountRol": {
+            "id": 5,
+            "created_at": null,
+            "updated_at": "2019-09-03 19:56:20",
+            "name": "Inspector",
+            "description": "<p>Inspector</p>\n",
+            "code": "5",
+            "father_code": "-"
+        },
+        "attach": []
+    },
+    {
+        "AccountRol": {
+            "id": 6,
+            "created_at": null,
+            "updated_at": "2019-09-03 19:56:20",
+            "name": "Técnico Financiero",
+            "description": "<p>T&eacute;cnico Financiero</p>\n",
+            "code": "6",
+            "father_code": "-"
+        },
+        "attach": []
+    },
+    {
+        "AccountRol": {
+            "id": 7,
+            "created_at": null,
+            "updated_at": "2019-09-03 19:56:20",
+            "name": "Administrador Financiero",
+            "description": "<p>Administrador Financiero</p>\n",
+            "code": "7",
+            "father_code": "-"
+        },
+        "attach": []
+    },
+    {
+        "AccountRol": {
+            "id": 8,
+            "created_at": null,
+            "updated_at": "2019-09-03 19:56:20",
+            "name": "Administrador Registro y Control",
+            "description": "<p>Administrador Registro y Control</p>\n",
+            "code": "8",
+            "father_code": "-"
+        },
+        "attach": []
+    },
+    {
+        "AccountRol": {
+            "id": 9,
+            "created_at": null,
+            "updated_at": "2019-09-03 19:56:20",
+            "name": "Coordinador Zonal",
+            "description": "<p>Coordinador Zonal</p>\n",
+            "code": "9",
+            "father_code": "-"
+        },
+        "attach": []
+    }
+]

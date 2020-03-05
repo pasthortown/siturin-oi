@@ -1,0 +1,842 @@
+[
+    {
+        "State": {
+            "id": 1,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Solicitud en Trámite",
+            "description": "Solicitud en Trámite",
+            "code": "1",
+            "father_code": "-"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 2,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Solicitud Aprobada",
+            "description": "Solicitud Aprobada",
+            "code": "2",
+            "father_code": "-"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 3,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Solicitud Rechazada",
+            "description": "Solicitud Rechazada",
+            "code": "3",
+            "father_code": "-"
+        },
+        "attach": []
+    },
+        {
+        "State": {
+            "id": 4,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Inspección - Técnico Zonal",
+            "description": "Inspección - Técnico Zonal",
+            "code": "4",
+            "father_code": "-"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 5,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-17 12:19:19",
+            "name": "Aplazo para Inspección (30 Días) - Técnico Zonal",
+            "description": "Aplazo para Inspección (30 Días) - Técnico Zonal",
+            "code": "5",
+            "father_code": "-"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 6,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Aplazo para Inspección (60 Días) - Técnico Zonal",
+            "description": "Aplazo para Inspección (60 Días) - Técnico Zonal",
+            "code": "6",
+            "father_code": "-"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 7,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Revisión - Técnico Financiero",
+            "description": "Revisión - Técnico Financiero",
+            "code": "7",
+            "father_code": "-"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 8,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Revisión Requerimiento al Usuario- Técnico Financiero",
+            "description": "Revisión Requerimiento al Usuario - Técnico Financiero",
+            "code": "8",
+            "father_code": "-"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 9,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Documentación Entregada",
+            "description": "Documentación Entregada",
+            "code": "9",
+            "father_code": "-"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 10,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Coordinador Zonal",
+            "description": "Coordinador Zonal",
+            "code": "10",
+            "father_code": "-"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 11,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Registro",
+            "description": "Registro",
+            "code": "1.1",
+            "father_code": "1"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 12,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Registro",
+            "description": "Registro",
+            "code": "2.1",
+            "father_code": "2"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 13,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Registro",
+            "description": "Registro",
+            "code": "3.1",
+            "father_code": "3"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 14,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Registro",
+            "description": "Registro",
+            "code": "4.1",
+            "father_code": "4"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 15,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Registro",
+            "description": "Registro",
+            "code": "5.1",
+            "father_code": "5"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 16,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Registro",
+            "description": "Registro",
+            "code": "6.1",
+            "father_code": "6"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 17,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Registro",
+            "description": "Registro",
+            "code": "7.1",
+            "father_code": "7"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 18,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Registro",
+            "description": "Registro",
+            "code": "8.1",
+            "father_code": "8"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 19,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Registro",
+            "description": "Registro",
+            "code": "9.1",
+            "father_code": "9"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 20,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Registro",
+            "description": "Registro",
+            "code": "10.1",
+            "father_code": "10"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 21,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Reclasificación",
+            "description": "Reclasificaci&oacute;n",
+            "code": "1.2",
+            "father_code": "1"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 22,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Reclasificación",
+            "description": "Reclasificaci&oacute;n",
+            "code": "2.2",
+            "father_code": "2"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 23,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Reclasificación",
+            "description": "Reclasificaci&oacute;n",
+            "code": "3.2",
+            "father_code": "3"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 24,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Reclasificación",
+            "description": "Reclasificaci&oacute;n",
+            "code": "4.2",
+            "father_code": "4"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 25,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Reclasificación",
+            "description": "Reclasificaci&oacute;n",
+            "code": "5.2",
+            "father_code": "5"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 26,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Reclasificación",
+            "description": "Reclasificaci&oacute;n",
+            "code": "6.2",
+            "father_code": "6"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 27,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Reclasificación",
+            "description": "Reclasificaci&oacute;n",
+            "code": "7.2",
+            "father_code": "7"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 28,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Reclasificación",
+            "description": "Reclasificaci&oacute;n",
+            "code": "8.2",
+            "father_code": "8"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 29,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Reclasificación",
+            "description": "Reclasificaci&oacute;n",
+            "code": "9.2",
+            "father_code": "9"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 30,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Reclasificación",
+            "description": "Reclasificaci&oacute;n",
+            "code": "10.2",
+            "father_code": "10"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 31,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Recategorización",
+            "description": "Recategorizaci&oacute;n",
+            "code": "1.3",
+            "father_code": "1"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 32,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Recategorización",
+            "description": "Recategorizaci&oacute;n",
+            "code": "2.3",
+            "father_code": "2"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 33,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Recategorización",
+            "description": "Recategorizaci&oacute;n",
+            "code": "3.3",
+            "father_code": "3"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 34,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Recategorización",
+            "description": "Recategorizaci&oacute;n",
+            "code": "4.3",
+            "father_code": "4"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 35,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Recategorización",
+            "description": "Recategorizaci&oacute;n",
+            "code": "5.3",
+            "father_code": "5"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 36,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Recategorización",
+            "description": "Recategorizaci&oacute;n",
+            "code": "6.3",
+            "father_code": "6"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 37,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Recategorización",
+            "description": "Recategorizaci&oacute;n",
+            "code": "7.3",
+            "father_code": "7"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 38,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Recategorización",
+            "description": "Recategorizaci&oacute;n",
+            "code": "8.3",
+            "father_code": "8"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 39,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Recategorización",
+            "description": "Recategorizaci&oacute;n",
+            "code": "9.3",
+            "father_code": "9"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 40,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Recategorización",
+            "description": "Recategorizaci&oacute;n",
+            "code": "10.3",
+            "father_code": "10"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 41,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Actualización",
+            "description": "Actualizaci&oacute;n",
+            "code": "1.4",
+            "father_code": "1"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 42,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Actualización",
+            "description": "Actualizaci&oacute;n",
+            "code": "2.4",
+            "father_code": "2"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 43,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Actualización",
+            "description": "Actualizaci&oacute;n",
+            "code": "3.4",
+            "father_code": "3"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 44,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Actualización",
+            "description": "Actualizaci&oacute;n",
+            "code": "4.4",
+            "father_code": "4"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 45,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Actualización",
+            "description": "Actualizaci&oacute;n",
+            "code": "5.4",
+            "father_code": "5"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 46,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Actualización",
+            "description": "Actualizaci&oacute;n",
+            "code": "6.4",
+            "father_code": "6"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 47,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Actualización",
+            "description": "Actualizaci&oacute;n",
+            "code": "7.4",
+            "father_code": "7"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 48,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Actualización",
+            "description": "Actualizaci&oacute;n",
+            "code": "8.4",
+            "father_code": "8"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 49,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Actualización",
+            "description": "Actualizaci&oacute;n",
+            "code": "9.4",
+            "father_code": "9"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 50,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Actualización",
+            "description": "Actualizaci&oacute;n",
+            "code": "10.4",
+            "father_code": "10"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 51,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Inactivación",
+            "description": "Inactivaci&oacute;n",
+            "code": "1.5",
+            "father_code": "1"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 52,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Inactivación",
+            "description": "Inactivaci&oacute;n",
+            "code": "2.5",
+            "father_code": "2"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 53,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Inactivación",
+            "description": "Inactivaci&oacute;n",
+            "code": "3.5",
+            "father_code": "3"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 54,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Inactivación",
+            "description": "Inactivaci&oacute;n",
+            "code": "4.5",
+            "father_code": "4"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 55,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Inactivación",
+            "description": "Inactivaci&oacute;n",
+            "code": "5.5",
+            "father_code": "5"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 56,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Inactivación",
+            "description": "Inactivaci&oacute;n",
+            "code": "6.5",
+            "father_code": "6"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 57,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Inactivación",
+            "description": "Inactivaci&oacute;n",
+            "code": "7.5",
+            "father_code": "7"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 58,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Inactivación",
+            "description": "Inactivaci&oacute;n",
+            "code": "8.5",
+            "father_code": "8"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 59,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Inactivación",
+            "description": "Inactivaci&oacute;n",
+            "code": "9.5",
+            "father_code": "9"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 60,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Inactivación",
+            "description": "Inactivaci&oacute;n",
+            "code": "10.5",
+            "father_code": "10"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 61,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Reingreso",
+            "description": "Reingreso",
+            "code": "1.6",
+            "father_code": "1"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 62,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Reingreso",
+            "description": "Reingreso",
+            "code": "2.6",
+            "father_code": "2"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 63,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Reingreso",
+            "description": "Reingreso",
+            "code": "3.6",
+            "father_code": "3"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 64,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Reingreso",
+            "description": "Reingreso",
+            "code": "4.6",
+            "father_code": "4"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 65,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Reingreso",
+            "description": "Reingreso",
+            "code": "5.6",
+            "father_code": "5"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 66,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Reingreso",
+            "description": "Reingreso",
+            "code": "6.6",
+            "father_code": "6"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 67,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Reingreso",
+            "description": "Reingreso",
+            "code": "7.6",
+            "father_code": "7"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 68,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Reingreso",
+            "description": "Reingreso",
+            "code": "8.6",
+            "father_code": "8"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 69,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Reingreso",
+            "description": "Reingreso",
+            "code": "9.6",
+            "father_code": "9"
+        },
+        "attach": []
+    },
+    {
+        "State": {
+            "id": 70,
+            "created_at": "2019-12-16 15:38:15",
+            "updated_at": "2019-12-16 15:38:15",
+            "name": "Reingreso",
+            "description": "Reingreso",
+            "code": "10.6",
+            "father_code": "10"
+        },
+        "attach": []
+    }
+]

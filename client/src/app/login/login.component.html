@@ -1,0 +1,166 @@
+<div class="container" class="login-page">
+  <div class="row"><div class="col-12" style="height: 10px;"></div></div>
+  <div class="row">
+    <div class="col-md-2 col-lg-2 col-sm-1"></div>
+    <div class="col-md-8 col-lg-8 col-sm-10 pretty-form">
+      <form>
+        <div class="row">
+          <div class="col-12 text-right mt-1">
+            <button
+              type="button"
+              class="btn btn-primary btn-sm"
+              title="Video Tutorial"
+              (click)="openDialog(contentvideo)"
+            >
+              <span class="fas fa-file-video"></span>&nbsp;Tutorial
+            </button>
+            <a href="assets/documents/manual.pdf" download="Manual de Usuario" class="btn btn-secondary btn-sm ml-1 mr-2" title="Manual de Usuario">
+              <i class="far fa-file-pdf"></i>&nbsp;Manual
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mt-2">&nbsp;</div>
+          <div class="col-12 text-center mb-3">
+            <img src="assets/images/SITURINcolor.png" class="col-4" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <small>
+              <div class="alert alert-info mt-2 mb-2" role="alert">
+                <label class="col-12 text-justify"><strong>Importante:</strong></label><br />
+                <p class="col-12 text-justify">Estimado Usuario, si su establecimiento se encuentra ubicado en el cantón Quito, por favor acérquese a las oficinas de "Quito Turismo" para solicitar su Certificado de Registro Turístico</p>
+                <p class="col-12 text-justify"><strong>Dirección: </strong>Parque Bicentenario, terminales del antiguo Aeropuerto de Quito<br/>
+                <strong>Horario de Atención: </strong>Lunes a Viernes de 08:30 a 17:00<br/>
+                <strong>Teléfono: </strong><a href="tel:022993300">(02) 2993 300</a> extensiones 1003 y 1035<br/>
+                <strong>Correo electrónico: </strong><a href="mailto:info@quito-turismo.gob.ec">info@quito-turismo.gob.ec</a></p>
+              </div>
+            </small>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="alert alert-info"
+              role="alert"
+            ><small>
+              <p class="col-12 text-justify">Si usted tiene inconvenientes para ingresar al sistema, comuníquese con el Ministerio de Turismo. <a href="javascript:void(0)" (click)="openDialog(content)">Visualizar Directorio Telefónico de las Coordinaciones Zonales</a></p></small>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Correo Electrónico</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="Correo Electrónico"
+            [(ngModel)]="email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Contraseña</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            name="password"
+            placeholder="Contraseña"
+            [(ngModel)]="password"
+          />
+        </div>
+        <div class="row" *ngIf="esperando">
+          <div class="col-12">
+            <div class="progress mb-3">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%">Espere...</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <button
+              type="submit"
+              class="btn btn-success mr-1"
+              (click)="login()"
+            >
+              Ingresar
+            </button>
+            <a [routerLink]="['/register']" class="btn btn-primary mr-1">
+              Crear Cuenta
+            </a>
+            <a [routerLink]="['/password-recovery']" class="btn btn-warning mr-1">
+              Recuperar Credenciales
+            </a>
+            <a [routerLink]="['/inactivacion']" class="btn btn-info ml-3">
+              Inactivar Registro
+            </a>
+          </div>
+        </div>
+      </form>
+      <div class="row mt-2">
+        <div class="col-12 text-center">
+          <img class="col-10" src="assets/images/pie_login.png"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 text-center text-light mt-5">
+      <small>Ministerio de Turismo del Ecuador</small>
+    </div>
+  </div>
+</div>
+<ng-template #content let-modal>
+   <div class="modal-header">
+      <h4 class="modal-title">Directorio Telefónico de las Coordinaciones Zonales</h4>
+      <button type="button" class="close" (click)="modal.dismiss('Cross click')">
+         <span>&times;</span>
+      </button>
+   </div>
+   <div class="modal-body">
+      <div class="row">
+         <div class="col-12" style="overflow-y: auto; height: 500px;">
+            <table class="table table-hover table-striped">
+              <thead>
+                  <th>Nombre</th>
+                  <th>Teléfono</th>
+                  <th>Dirección</th>
+                  <th>Correo Electrónico</th>
+              </thead>
+              <tbody>
+                <tr *ngFor="let zonal of zonales">
+                  <td> {{zonal.name}}
+                  </td>
+                  <td>
+                    <a href=”tel:{{zonal.phone_number}}″>{{zonal.phone_number}}</a>
+                  </td>
+                  <td>
+                    <a href="https://www.google.com/maps/@{{zonal.location_latitude}},{{zonal.location_longitude}},15z" target="blank">{{zonal.address}}</a>
+                  </td>
+                  <td>
+                    <a href="mailto:{{zonal.email}}">{{zonal.email}}</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+         </div>
+      </div>
+   </div>
+</ng-template>
+<ng-template #contentvideo let-modal>
+  <div class="modal-header">
+     <h4 class="modal-title">Video Tutorial</h4>
+     <button type="button" class="close" (click)="modal.dismiss('Cross click')">
+        <span>&times;</span>
+     </button>
+  </div>
+  <div class="modal-body">
+     <div class="row">
+        <video class="col-12" style="overflow-y: auto; height: 500px;" autoplay="autoplay" loop controls="false" muted="muted">
+            <source src="assets/videos/video_tutorial.mp4" type="video/mp4">
+        </video>
+     </div>
+  </div>
+</ng-template>

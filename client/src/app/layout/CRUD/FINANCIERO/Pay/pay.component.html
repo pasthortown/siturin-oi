@@ -1,0 +1,175 @@
+<div class="row">
+   <h1 class="col-12 text-right">
+      Pay
+   </h1>
+</div>
+<div class="row">
+   <div class="col-12">
+      <div class="btn-toolbar" role="toolbar">
+         <div class="btn-group mr-2" role="group">
+            <button type="button" class="btn btn-primary" title="Actualizar" (click)="goToPage(currentPage)"><i class="fas fa-sync"></i></button>
+         </div>
+         <div class="btn-group mr-2" role="group">
+            <button type="button" title="Nuevo" class="btn btn-success" (click)="newPay(content)"><i class="fas fa-file"></i></button>
+            <button type="button" title="Editar" class="btn btn-warning" (click)="editPay(content)"><i class="fas fa-edit"></i></button>
+         </div>
+         <div class="btn-group mr-2" role="group">
+            <button type="button" title="Eliminar" class="btn btn-danger" (click)="deletePay()"><i class="fas fa-trash"></i></button>
+         </div>
+         <div class="btn-group mr-2" role="group">
+            <button type="button" title="BackUp" class="btn btn-dark" (click)="backup()"><i class="fas fa-download"></i></button>
+            <button type="button" title="Exportar CSV" class="btn btn-dark" (click)="toCSV()"><i class="fas fa-file-csv"></i></button>
+            <button type="button" title="Cargar" class="btn btn-dark" (click)="uploadInput.click()"><i class="fas fa-upload"></i></button>
+            <input [hidden]="true" type="file" class="form-control" #uploadInput (change)="decodeUploadFile($event)" accept=".json"/>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="row">
+   <div class="col-12">
+      <table class="table table-hover mt-2">
+         <thead>
+            <tr>
+               <th>Seleccionado</th>
+               <th>amount_payed</th>
+               <th>amount_to_pay</th>
+               <th>pay_date</th>
+               <th>payed</th>
+               <th>code</th>
+               <th>max_pay_date</th>
+               <th>ruc_id</th>
+               <th>amount_to_pay_taxes</th>
+               <th>amount_to_pay_base</th>
+               <th>amount_to_pay_fines</th>
+               <th>notes</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr *ngFor="let pay of pays" (click)="selectPay(pay)">
+               <td class="text-right"><span *ngIf="paySelected === pay" class="far fa-hand-point-right"></span></td>
+               <td>{{pay.amount_payed}}</td>
+               <td>{{pay.amount_to_pay}}</td>
+               <td>{{pay.pay_date}}</td>
+               <td>{{pay.payed}}</td>
+               <td>{{pay.code}}</td>
+               <td>{{pay.max_pay_date}}</td>
+               <td>{{pay.ruc_id}}</td>
+               <td>{{pay.amount_to_pay_taxes}}</td>
+               <td>{{pay.amount_to_pay_base}}</td>
+               <td>{{pay.amount_to_pay_fines}}</td>
+               <td>{{pay.notes}}</td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+</div>
+<div class="row">
+   <div class="col-12">
+      <div class="btn-toolbar" role="toolbar">
+         <div class="btn-group mr-2" role="group">
+            <button type="button" class="btn btn-light" *ngIf="currentPage === 1" title="Primera Página" disabled>Primera</button>
+            <button type="button" class="btn btn-light" *ngIf="currentPage !== 1" title="Primera Página" (click)="goToPage(1)">Primera</button>
+            <button type="button" class="btn btn-light" *ngIf="currentPage > 1" title="Página Anterior" (click)="goToPage((currentPage*1) - 1)">{{(currentPage * 1) - 1}}</button>
+            <button type="button" class="btn btn-primary" title="Página Actual">{{currentPage}}</button>
+            <button type="button" class="btn btn-light" *ngIf="currentPage < lastPage" title="Página Siguiente" (click)="goToPage((currentPage*1) + 1)">{{(currentPage * 1) + 1}}</button>
+            <button type="button" class="btn btn-light" *ngIf="currentPage !== lastPage" title="Última Página" (click)="goToPage(lastPage)">Última</button>
+            <button type="button" class="btn btn-light" *ngIf="currentPage === lastPage" title="Última Página" disabled>Última</button>
+         </div>
+         <div class="input-group">
+            <div class="input-group-prepend">
+               <button type="button" class="input-group-text btn btn-success" title="Ir a la Página" (click)="goToPage(goToPageNumber.value)">Ir a</button>
+            </div>
+            <input type="number" min="{{1}}" max="{{lastPage}}" class="form-control" placeholder="Ir a la Página" #goToPageNumber>
+         </div>
+      </div>
+   </div>
+</div>
+<ng-template #content let-modal>
+   <div class="modal-header">
+      <h4 class="modal-title">Datos:</h4>
+      <button type="button" class="close" (click)="modal.dismiss('Cross click')">
+         <span>&times;</span>
+      </button>
+   </div>
+   <div class="modal-body">
+      <div class="row">
+         <div class="col-12">
+            <div class="form-group row">
+               <label for="amount_payed" class="col-4 col-form-label">amount_payed</label>
+               <div class="col-8">
+                  <input type="number" class="form-control" id="amount_payed" name="amount_payed" placeholder="amountPayed" [(ngModel)]="paySelected.amount_payed">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="amount_to_pay" class="col-4 col-form-label">amount_to_pay</label>
+               <div class="col-8">
+                  <input type="number" class="form-control" id="amount_to_pay" name="amount_to_pay" placeholder="amountToPay" [(ngModel)]="paySelected.amount_to_pay">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="pay_date" class="col-4 col-form-label">pay_date</label>
+               <div class="col-8">
+                  <input type="date" class="form-control" id="pay_date" name="pay_date" placeholder="payDate" [ngModel]="paySelected.pay_date | date:'y-MM-dd'" (ngModelChange)="paySelected.pay_date = $event">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="payed" class="col-4 col-form-label">payed</label>
+               <div class="col-8">
+                  <div class="onoffswitch">
+                     <input type="checkbox" class="onoffswitch-checkbox" id="payed" name="payed" [(ngModel)]="paySelected.payed"><label class="onoffswitch-label" for="payed">
+                           <span class="onoffswitch-inner"></span>
+                           <span class="onoffswitch-switch"></span>
+                     </label>
+                  </div>
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="code" class="col-4 col-form-label">code</label>
+               <div class="col-8">
+                  <input type="text" class="form-control" id="code" name="code" placeholder="code" [(ngModel)]="paySelected.code">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="max_pay_date" class="col-4 col-form-label">max_pay_date</label>
+               <div class="col-8">
+                  <input type="date" class="form-control" id="max_pay_date" name="max_pay_date" placeholder="maxPayDate" [ngModel]="paySelected.max_pay_date | date:'y-MM-dd'" (ngModelChange)="paySelected.max_pay_date = $event">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="ruc_id" class="col-4 col-form-label">ruc_id</label>
+               <div class="col-8">
+                  <input type="number" class="form-control" id="ruc_id" name="ruc_id" placeholder="rucId" [(ngModel)]="paySelected.ruc_id">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="amount_to_pay_taxes" class="col-4 col-form-label">amount_to_pay_taxes</label>
+               <div class="col-8">
+                  <input type="number" class="form-control" id="amount_to_pay_taxes" name="amount_to_pay_taxes" placeholder="amountToPayTaxes" [(ngModel)]="paySelected.amount_to_pay_taxes">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="amount_to_pay_base" class="col-4 col-form-label">amount_to_pay_base</label>
+               <div class="col-8">
+                  <input type="number" class="form-control" id="amount_to_pay_base" name="amount_to_pay_base" placeholder="amountToPayBase" [(ngModel)]="paySelected.amount_to_pay_base">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="amount_to_pay_fines" class="col-4 col-form-label">amount_to_pay_fines</label>
+               <div class="col-8">
+                  <input type="number" class="form-control" id="amount_to_pay_fines" name="amount_to_pay_fines" placeholder="amountToPayFines" [(ngModel)]="paySelected.amount_to_pay_fines">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="notes" class="col-4 col-form-label">notes</label>
+               <div class="col-8">
+                  <ck-editor id="notes" name="notes" skin="moono-lisa" [(ngModel)]="paySelected.notes"></ck-editor>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="modal-footer">
+      <button type="button" class="btn btn-outline-success" (click)="modal.close('Guardar click')">Guardar</button>
+      <button type="button" class="btn btn-outline-danger" (click)="modal.close('Cancelar click')">Cancelar</button>
+   </div>
+</ng-template>

@@ -1,0 +1,167 @@
+<div class="row">
+   <h1 class="col-12 text-right">
+      Tipos de Tarifarios
+   </h1>
+</div>
+<div class="row">
+      <div class="col-12">
+         <div class="btn-toolbar" role="toolbar">
+            <div class="btn-group mr-2" role="group">
+               <button type="button" class="btn btn-primary" title="Actualizar" (click)="refresh()"><i class="fas fa-sync"></i></button>
+            </div>
+            <div class="btn-group mr-2" role="group">
+               <button type="button" title="Nuevo" class="btn btn-success" (click)="newTariffType(content)"><i class="fas fa-file"></i></button>
+               <button type="button" title="Editar" class="btn btn-warning" (click)="editTariffType(content)"><i class="fas fa-edit"></i></button>
+            </div>
+            <div class="btn-group mr-2" role="group">
+               <button type="button" title="Eliminar" class="btn btn-danger" (click)="deleteTariffType()"><i class="fas fa-trash"></i></button>
+            </div>
+            <div class="btn-group mr-2" role="group">
+               <button type="button" title="BackUp" class="btn btn-dark" (click)="backup()"><i class="fas fa-download"></i></button>
+               <button type="button" title="Exportar CSV" class="btn btn-dark" (click)="toCSV()"><i class="fas fa-file-csv"></i></button>
+               <button type="button" title="Cargar" class="btn btn-dark" (click)="uploadInput.click()"><i class="fas fa-upload"></i></button>
+               <input [hidden]="true" type="file" class="form-control" #uploadInput (change)="decodeUploadFile($event)" accept=".json"/>
+            </div>
+            <div class="input-group">
+                  <div class="input-group-prepend">
+                    <label
+                      type="button"
+                      class="input-group-text btn btn-primary"
+                      title="Filtrar por Rol Padre"
+                    >
+                      <span class="fas fa-search"></span>
+                  </label>
+                  </div>
+                  <select
+                    class="form-control"
+                    id="filter_rol_father"
+                    name="filter_rol_father"
+                    [(ngModel)]="filter_tariff_type_father"
+                    (change)="refresh()"
+                  >
+                    <option value="all" selected>Todos</option>
+                    <option value="-" selected>Sin Padre</option>
+                    <option
+                      *ngFor="let father_tariff_type of father_tariff_types"
+                      value="{{ father_tariff_type.code }}"
+                    >
+                      {{ father_tariff_type.name }}
+                    </option>
+                  </select>
+                </div>
+         </div>
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-12">
+         <table class="table table-hover mt-2">
+            <thead>
+               <tr>
+                  <th>Seleccionado</th>
+                  <th>Nombre</th>
+                  <th>Es Referencia</th>
+                  <th>Factor</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr *ngFor="let tariff_type of tariff_types" (click)="selectTariffType(tariff_type)">
+                  <td class="text-right"><span *ngIf="tariff_typeSelected === tariff_type" class="far fa-hand-point-right"></span></td>
+                  <td>{{tariff_type.name}}</td>
+                  <td>
+                     <i class="fas fa-check-double" *ngIf="tariff_type.is_reference"></i>
+                     <i class="fas fa-times-circle" *ngIf="!tariff_type.is_reference"></i>
+                  </td>
+                  <td>{{tariff_type.factor}}</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-12">
+         <div class="btn-toolbar" role="toolbar">
+            <div class="btn-group mr-2" role="group">
+               <button type="button" class="btn btn-light" *ngIf="currentPage === 1" title="Primera Página" disabled>Primera</button>
+               <button type="button" class="btn btn-light" *ngIf="currentPage !== 1" title="Primera Página" (click)="goToPage(1)">Primera</button>
+               <button type="button" class="btn btn-light" *ngIf="currentPage > 1" title="Página Anterior" (click)="goToPage((currentPage*1) - 1)">{{(currentPage * 1) - 1}}</button>
+               <button type="button" class="btn btn-primary" title="Página Actual">{{currentPage}}</button>
+               <button type="button" class="btn btn-light" *ngIf="currentPage < lastPage" title="Página Siguiente" (click)="goToPage((currentPage*1) + 1)">{{(currentPage * 1) + 1}}</button>
+               <button type="button" class="btn btn-light" *ngIf="currentPage !== lastPage" title="Última Página" (click)="goToPage(lastPage)">Última</button>
+               <button type="button" class="btn btn-light" *ngIf="currentPage === lastPage" title="Última Página" disabled>Última</button>
+            </div>
+            <div class="input-group">
+               <div class="input-group-prepend">
+                  <button type="button" class="input-group-text btn btn-success" title="Ir a la Página" (click)="goToPage(goToPageNumber.value)">Ir a</button>
+               </div>
+               <input type="number" min="{{1}}" max="{{lastPage}}" class="form-control" placeholder="Ir a la Página" #goToPageNumber>
+            </div>
+         </div>
+      </div>
+   </div>
+   <ng-template #content let-modal>
+      <div class="modal-header">
+         <h4 class="modal-title">Datos:</h4>
+         <button type="button" class="close" (click)="modal.dismiss('Cross click')">
+            <span>&times;</span>
+         </button>
+      </div>
+      <div class="modal-body">
+         <div class="row">
+            <div class="col-12">
+               <div class="form-group row">
+                  <label for="name" class="col-4 col-form-label">Nombre</label>
+                  <div class="col-8">
+                     <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" [(ngModel)]="tariff_typeSelected.name">
+                  </div>
+               </div>
+               <div class="form-group row">
+                  <label for="is_reference" class="col-4 col-form-label">Es Referencia</label>
+                  <div class="col-8">
+                     <div class="onoffswitch">
+                     <input type="checkbox" class="onoffswitch-checkbox" id="is_reference" name="Es Referencia de Grupo" [(ngModel)]="tariff_typeSelected.is_reference"><label class="onoffswitch-label" for="is_reference">
+                           <span class="onoffswitch-inner"></span>
+                           <span class="onoffswitch-switch"></span>
+                     </label>
+                  </div>
+                  </div>
+               </div>
+               <div class="form-group row">
+                  <label for="factor" class="col-4 col-form-label">Factor</label>
+                  <div class="col-8">
+                     <input type="number" class="form-control" id="factor" name="Factor" placeholder="factor" [(ngModel)]="tariff_typeSelected.factor">
+                  </div>
+               </div>
+               <div class="form-group row">
+                     <label for="father_code" class="col-4 col-form-label"
+                       >Tipo de Tarifario Padre</label
+                     >
+                     <div class="col-8">
+                       <select
+                         class="form-control"
+                         id="father_code"
+                         name="father_code"
+                         [(ngModel)]="tariff_typeSelected.father_code"
+                         (change)="
+                         tariff_typeSelected.code = buildCode(
+                              tariff_typeSelected.father_code
+                           )
+                         "
+                       >
+                         <option value="-" selected>Sin Rol Padre</option>
+                         <option
+                           *ngFor="let father_tariff_type of all_tariff_types"
+                           value="{{ father_tariff_type.code }}"
+                         >
+                           {{ father_tariff_type.name }}
+                         </option>
+                       </select>
+                     </div>
+                   </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal-footer">
+         <button type="button" class="btn btn-outline-success" (click)="modal.close('Guardar click')">Guardar</button>
+         <button type="button" class="btn btn-outline-danger" (click)="modal.close('Cancelar click')">Cancelar</button>
+      </div>
+   </ng-template>

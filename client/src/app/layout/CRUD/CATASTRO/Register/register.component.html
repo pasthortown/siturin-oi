@@ -1,0 +1,321 @@
+<div class="row">
+   <h1 class="col-12 text-right">
+      CATASTRO TURÍSTICO
+   </h1>
+</div>
+<div class="row">
+   <div class="col-12">
+      <div class="btn-toolbar" role="toolbar">
+         <div class="btn-group mr-2" role="group">
+            <button type="button" class="btn btn-primary" title="Actualizar" (click)="goToPage(currentPage)"><i class="fas fa-sync"></i></button>
+         </div>
+         <div class="btn-group mr-2" role="group">
+            <div class="input-group">
+               <div class="input-group-prepend">
+                  <button type="button" title="Buscar" class="btn btn-secondary" (click)="getByRuc()"><i class="fas fa-search"></i></button>
+               </div>
+               <input type="text" class="form-control" id="search_ruc" name="search_ruc" placeholder="Buscar por RUC" [(ngModel)]="search_ruc">
+             </div>
+         </div>
+         <div class="btn-group mr-2" role="group">
+            <div class="input-group">
+               <div class="input-group-prepend">
+                  <button type="button" title="Buscar" class="btn btn-secondary" (click)="downloadByActivity()"><i class="fas fa-file-csv"></i></button>
+               </div>
+               <select
+                  class="form-control"
+                  id="filter_activity"
+                  name="filter_activity"
+                  [(ngModel)]="filter_activity"
+                  >
+                  <option value="all" selected>Todos</option>
+                  <option  *ngFor="let activity of activities" value="{{activity.activity}}">{{activity.activity}}</option>
+               </select>
+             </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="row">
+   <div class="col-12">
+      <div style="width: 100%; overflow-x: auto;">
+         <table class="table table-hover mt-2">
+            <thead>
+               <tr>
+                  <th>Seleccionado</th>
+                  <th>RUC</th>
+                  <th>Número de Establecimiento</th>
+                  <th>Nombre Comercial</th>
+                  <th>Número de Registro</th>
+                  <th>Fecha de Registro</th>
+                  <th>Actividad</th>
+                  <th>Clasificación</th>
+                  <th>Categoría</th>
+                  <th>Identificación Representante Legal</th>
+                  <th>Representante Legal</th>
+                  <th>Georeferenciación</th>
+                  <th>Dirección</th>
+                  <th>Teléfono Principal</th>
+                  <th>Teléfono Secundario</th>
+                  <th>Correo Electrónico</th>
+                  <th>URL WEB</th>
+                  <th>Fuente</th>
+                  <th>Áreas</th>
+                  <th>Camas / Mesas</th>
+                  <th>Plazas</th>
+                  <th>Trabajadores Varones</th>
+                  <th>Trabajadores Mujeres</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr *ngFor="let register of registers" (click)="selectRegister(register)">
+                  <td class="text-right"><span *ngIf="registerSelected === register" class="far fa-hand-point-right"></span></td>
+                  <td>{{register.ruc}}</td>
+                  <td>{{register.establishment_ruc_code}}</td>
+                  <td>{{register.comercial_name}}</td>
+                  <td>{{register.register_code}}</td>
+                  <td>{{register.as_turistic_date}}</td>
+                  <td>{{register.activity}}</td>
+                  <td>{{register.classification}}</td>
+                  <td>{{register.category}}</td>
+                  <td>{{register.legal_representant_identification}}</td>
+                  <td>{{register.legal_representant_name}}</td>
+                  <td>Lat: {{register.georeference_latitude}} Lng: {{register.georeference_longitude}}</td>
+                  <td>{{register.address}}</td>
+                  <td>{{register.main_phone_number}}</td>
+                  <td>{{register.secondary_phone_number}}</td>
+                  <td>{{register.email}}</td>
+                  <td>{{register.web}}</td>
+                  <td>{{register.system_source}}</td>
+                  <td>{{register.max_areas}}</td>
+                  <td>{{register.max_beds}}</td>
+                  <td>{{register.max_capacity}}</td>
+                  <td>{{register.total_male}}</td>
+                  <td>{{register.total_female}}</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </div>
+</div>
+<div class="row">
+   <div class="col-12">
+      <div class="btn-toolbar" role="toolbar">
+         <div class="btn-group mr-2" role="group">
+            <button type="button" class="btn btn-light" *ngIf="currentPage === 1" title="Primera Página" disabled>Primera</button>
+            <button type="button" class="btn btn-light" *ngIf="currentPage !== 1" title="Primera Página" (click)="goToPage(1)">Primera</button>
+            <button type="button" class="btn btn-light" *ngIf="currentPage > 1" title="Página Anterior" (click)="goToPage((currentPage*1) - 1)">{{(currentPage * 1) - 1}}</button>
+            <button type="button" class="btn btn-primary" title="Página Actual">{{currentPage}}</button>
+            <button type="button" class="btn btn-light" *ngIf="currentPage < lastPage" title="Página Siguiente" (click)="goToPage((currentPage*1) + 1)">{{(currentPage * 1) + 1}}</button>
+            <button type="button" class="btn btn-light" *ngIf="currentPage !== lastPage" title="Última Página" (click)="goToPage(lastPage)">Última</button>
+            <button type="button" class="btn btn-light" *ngIf="currentPage === lastPage" title="Última Página" disabled>Última</button>
+         </div>
+         <div class="input-group">
+            <div class="input-group-prepend">
+               <button type="button" class="input-group-text btn btn-success" title="Ir a la Página" (click)="goToPage(goToPageNumber.value)">Ir a</button>
+            </div>
+            <input type="number" min="{{1}}" max="{{lastPage}}" class="form-control" placeholder="Ir a la Página" #goToPageNumber>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="row mt-5">
+   <div class="col-12" *ngIf="rucSelectedData !== ''">
+      <div class="alert alert-success" role="alert" [innerHtml]="rucSelectedData">
+      </div>
+   </div>
+</div>
+<ng-template #content let-modal>
+   <div class="modal-header">
+      <h4 class="modal-title">Datos:</h4>
+      <button type="button" class="close" (click)="modal.dismiss('Cross click')">
+         <span>&times;</span>
+      </button>
+   </div>
+   <div class="modal-body">
+      <div class="row">
+         <div class="col-12">
+            <div class="form-group row">
+               <label for="ruc" class="col-4 col-form-label">ruc</label>
+               <div class="col-8">
+                  <input type="text" class="form-control" id="ruc" name="ruc" placeholder="ruc" [(ngModel)]="registerSelected.ruc">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="comercial_name" class="col-4 col-form-label">comercial_name</label>
+               <div class="col-8">
+                  <input type="text" class="form-control" id="comercial_name" name="comercial_name" placeholder="comercialName" [(ngModel)]="registerSelected.comercial_name">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="register_code" class="col-4 col-form-label">register_code</label>
+               <div class="col-8">
+                  <input type="text" class="form-control" id="register_code" name="register_code" placeholder="registerCode" [(ngModel)]="registerSelected.register_code">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="as_turistic_date" class="col-4 col-form-label">as_turistic_date</label>
+               <div class="col-8">
+                  <input type="date" class="form-control" id="as_turistic_date" name="as_turistic_date" placeholder="asTuristicDate" [ngModel]="registerSelected.as_turistic_date | date:'y-MM-dd'" (ngModelChange)="registerSelected.as_turistic_date = $event">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="activity" class="col-4 col-form-label">activity</label>
+               <div class="col-8">
+                  <input type="text" class="form-control" id="activity" name="activity" placeholder="activity" [(ngModel)]="registerSelected.activity">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="category" class="col-4 col-form-label">category</label>
+               <div class="col-8">
+                  <input type="text" class="form-control" id="category" name="category" placeholder="category" [(ngModel)]="registerSelected.category">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="classification" class="col-4 col-form-label">classification</label>
+               <div class="col-8">
+                  <input type="text" class="form-control" id="classification" name="classification" placeholder="classification" [(ngModel)]="registerSelected.classification">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="legal_representant_name" class="col-4 col-form-label">legal_representant_name</label>
+               <div class="col-8">
+                  <input type="text" class="form-control" id="legal_representant_name" name="legal_representant_name" placeholder="legalRepresentantName" [(ngModel)]="registerSelected.legal_representant_name">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="legal_representant_identification" class="col-4 col-form-label">legal_representant_identification</label>
+               <div class="col-8">
+                  <input type="text" class="form-control" id="legal_representant_identification" name="legal_representant_identification" placeholder="legalRepresentantIdentification" [(ngModel)]="registerSelected.legal_representant_identification">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="establishment_property_type" class="col-4 col-form-label">establishment_property_type</label>
+               <div class="col-8">
+                  <input type="text" class="form-control" id="establishment_property_type" name="establishment_property_type" placeholder="establishmentPropertyType" [(ngModel)]="registerSelected.establishment_property_type">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="organization_type" class="col-4 col-form-label">organization_type</label>
+               <div class="col-8">
+                  <input type="text" class="form-control" id="organization_type" name="organization_type" placeholder="organizationType" [(ngModel)]="registerSelected.organization_type">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="ubication_main" class="col-4 col-form-label">ubication_main</label>
+               <div class="col-8">
+                  <input type="text" class="form-control" id="ubication_main" name="ubication_main" placeholder="ubicationMain" [(ngModel)]="registerSelected.ubication_main">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="ubication_sencond" class="col-4 col-form-label">ubication_sencond</label>
+               <div class="col-8">
+                  <input type="text" class="form-control" id="ubication_sencond" name="ubication_sencond" placeholder="ubicationSencond" [(ngModel)]="registerSelected.ubication_sencond">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="ubication_third" class="col-4 col-form-label">ubication_third</label>
+               <div class="col-8">
+                  <input type="text" class="form-control" id="ubication_third" name="ubication_third" placeholder="ubicationThird" [(ngModel)]="registerSelected.ubication_third">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="address" class="col-4 col-form-label">address</label>
+               <div class="col-8">
+                  <input type="text" class="form-control" id="address" name="address" placeholder="address" [(ngModel)]="registerSelected.address">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="main_phone_number" class="col-4 col-form-label">main_phone_number</label>
+               <div class="col-8">
+                  <input type="text" class="form-control" id="main_phone_number" name="main_phone_number" placeholder="mainPhoneNumber" [(ngModel)]="registerSelected.main_phone_number">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="secondary_phone_number" class="col-4 col-form-label">secondary_phone_number</label>
+               <div class="col-8">
+                  <input type="text" class="form-control" id="secondary_phone_number" name="secondary_phone_number" placeholder="secondaryPhoneNumber" [(ngModel)]="registerSelected.secondary_phone_number">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="email" class="col-4 col-form-label">email</label>
+               <div class="col-8">
+                  <input type="text" class="form-control" id="email" name="email" placeholder="email" [(ngModel)]="registerSelected.email">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="web" class="col-4 col-form-label">web</label>
+               <div class="col-8">
+                  <input type="text" class="form-control" id="web" name="web" placeholder="web" [(ngModel)]="registerSelected.web">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="system_source" class="col-4 col-form-label">system_source</label>
+               <div class="col-8">
+                  <input type="text" class="form-control" id="system_source" name="system_source" placeholder="systemSource" [(ngModel)]="registerSelected.system_source">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="georeference" class="col-4 col-form-label">georeference</label>
+               <div class="col-8">
+                  <agm-map class="col-12" style="height: 200px;" [gestureHandling]="'cooperative'" [scrollwheel]="null"  [latitude]="registerSelected.georeference_latitude * 1" [longitude]="registerSelected.georeference_longitude * 1" [zoom]="15" (mapClick)="georeferenceEvent($event)">
+                     <agm-marker [latitude]="registerSelected.georeference_latitude * 1" [longitude]="registerSelected.georeference_longitude * 1" [markerDraggable]="true" (dragEnd)="georeferenceEvent($event)" [animation]="'DROP'"></agm-marker>
+                  </agm-map>
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="establishment_ruc_code" class="col-4 col-form-label">establishment_ruc_code</label>
+               <div class="col-8">
+                  <input type="text" class="form-control" id="establishment_ruc_code" name="establishment_ruc_code" placeholder="establishmentRucCode" [(ngModel)]="registerSelected.establishment_ruc_code">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="max_capacity" class="col-4 col-form-label">max_capacity</label>
+               <div class="col-8">
+                  <input type="number" class="form-control" id="max_capacity" name="max_capacity" placeholder="maxCapacity" [(ngModel)]="registerSelected.max_capacity">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="max_areas" class="col-4 col-form-label">max_areas</label>
+               <div class="col-8">
+                  <input type="number" class="form-control" id="max_areas" name="max_areas" placeholder="maxAreas" [(ngModel)]="registerSelected.max_areas">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="total_male" class="col-4 col-form-label">total_male</label>
+               <div class="col-8">
+                  <input type="number" class="form-control" id="total_male" name="total_male" placeholder="totalMale" [(ngModel)]="registerSelected.total_male">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="total_female" class="col-4 col-form-label">total_female</label>
+               <div class="col-8">
+                  <input type="number" class="form-control" id="total_female" name="total_female" placeholder="totalFemale" [(ngModel)]="registerSelected.total_female">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="ruc_state" class="col-4 col-form-label">ruc_state</label>
+               <div class="col-8">
+                  <input type="text" class="form-control" id="ruc_state" name="ruc_state" placeholder="rucState" [(ngModel)]="registerSelected.ruc_state">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="max_beds" class="col-4 col-form-label">max_beds</label>
+               <div class="col-8">
+                  <input type="number" class="form-control" id="max_beds" name="max_beds" placeholder="maxBeds" [(ngModel)]="registerSelected.max_beds">
+               </div>
+            </div>
+            <div class="form-group row">
+               <label for="establishment_state" class="col-4 col-form-label">establishment_state</label>
+               <div class="col-8">
+                  <input type="text" class="form-control" id="establishment_state" name="establishment_state" placeholder="establishmentState" [(ngModel)]="registerSelected.establishment_state">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="modal-footer">
+      <button type="button" class="btn btn-outline-success" (click)="modal.close('Guardar click')">Guardar</button>
+      <button type="button" class="btn btn-outline-danger" (click)="modal.close('Cancelar click')">Cancelar</button>
+   </div>
+</ng-template>

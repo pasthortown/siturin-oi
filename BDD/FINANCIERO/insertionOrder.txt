@@ -1,0 +1,14 @@
+declarations
+declaration_item_categories
+pays
+states
+declaration_items
+declaration_item_values
+declaration_attachments
+pay_attachments
+declaration_declaration_item_value
+state_declarations
+logs
+migrations
+pay_mass_file_attachments
+pay_taxes
